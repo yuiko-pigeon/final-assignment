@@ -1,0 +1,12 @@
+@use "../foundation/global/index" as g;
+
+.l-footer{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+&__text {
+
+  font-family: g.$fontMp;
+  font-weight: g.$Mbold;
+}
+}

@@ -1,0 +1,22 @@
+@use "../../foundation/global/index" as g;
+
+.c-article{
+    color: g.$color-brown;
+    
+    &__card{
+    line-height: 1.485rem;//23.76px
+    display: block;
+    color: g.$color-brown;
+    font-weight: g.$Mbold;//400
+    font-size: 0.875rem; //14px
+    }
+    &--wideLineSpacing{
+        line-height:1.5rem;//24px
+    }
+    &__bottom{
+        display: block;
+        color: g.$color-white;
+        font-size: 0.875rem;    //14px
+        line-height: 2.0625rem; //33px
+    }
+}

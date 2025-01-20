@@ -1,0 +1,16 @@
+@use "../foundation/global/index" as g;
+.l-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    box-sizing: border-box;
+}
+.l-main{
+flex-grow: 1;
+
+&__font {
+  font-family: g.$fontMp;
+  font-weight: g.$bold;//700
+}
+}

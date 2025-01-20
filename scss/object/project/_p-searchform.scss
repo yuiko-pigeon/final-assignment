@@ -1,0 +1,19 @@
+@use "../../foundation/global/index" as g;
+
+.p-searchform{
+    display: flex;
+    margin:28px 0 45px 0;
+    justify-content: center;
+    height:40px;
+    
+    border: 1px solid g.$color-gray;
+
+    &__input{
+        display: flex;
+        
+    }
+    &__buttom{
+        display:flex;
+        
+    }
+}

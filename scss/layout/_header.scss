@@ -1,0 +1,32 @@
+@use "../foundation/global/index" as g;
+
+
+.l-header{
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: g.$color-background-beige;
+    position:relative;
+    &__article{
+        margin:0;
+        padding: 0;
+        height: 100%;
+    }
+    &__title{
+        display: flex;
+        font: g.$bold 2.5rem g.$fontR;//40px
+        color: g.$color-gray;
+        margin:31px 0 0 0;
+        padding: 12px;
+    }
+    &__title__small{
+        display: block;
+        font:g.$bold 1.25rem g.$fontR;//20px
+        color: g.$color-gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px;
+        }
+}

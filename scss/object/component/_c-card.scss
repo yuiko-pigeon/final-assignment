@@ -1,0 +1,12 @@
+@use "../../foundation/global/index" as g;
+
+.c-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__subcard{
+        background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+        height: 156px;
+        
+    }
+}

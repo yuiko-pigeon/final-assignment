@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Humberger</title>
+    <link rel="stylesheet" href="./css/ress.css">
+    <title>Hamberger</title>
+    <style>*{ outline:1px solid red;}
+         
+    </style>
 </head>
 <body>
-<header>
+    <style>body{ outline:1px solid blue;}</style>
+<div class="l-wrapper">
+    <header class="l-header">
     <aside>
         <nav>
-        <p>menu</p>
-        <ul>
+        <p class="l-header__title__small" >Menu</p>
+        <ul class="l-sidebar">
             <li>バーガー
                 <ul>
                     <li>ハンバーガー</li>
@@ -44,40 +50,76 @@
         </ul>
         </nav>
     </aside>
-    <div>
-        <h1>Humburger</h1>
-        <form action="" method="post" name="search-form">
-            <input type="search" placeholder="虫眼鏡アイコン"><input type="submit" value="検索">
+
+    <div class="l-header__article">
+        <h1 class="l-header__title">Hamburger</h1>
+        <form class="p-searchform" action="" method="post" name="search-form">
+            <input  class="p-searchform__input" type="search" placeholder="虫眼鏡アイコン"><input class="p-searchform__button" type="submit" value="検索">
         </form>
     </div>
 </header>
-<main>
-    <div>
-        <p>ダミーサイト</p>
+<main class="l-main l-main__font">
+    <div class="p-hero">
+        <p class="c-title__hero">ダミーサイト</p>
     </div>
+    <article class="p-article">
     <section>
-        <h2>Take Out</h2>
-        <h3>Take Out</h3>
-            <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
-        <h3>Take Out</h3>
-            <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+        <div class="p-card--threeBurgers">
+            <h2 class="c-title__card">Take Out</h2>
+            <div class="c-card">
+            <div class="c-card__subcard">
+                <h3 class="c-title__card__subtitle">Take OUT</h3>
+                    <p class="c-article__card">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+            </div>
+                <div class="c-card__subcard">
+                    <h3 class="c-title__card__subtitle">Take OUT</h3>
+                        <p class="c-article__card">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
-        <h2>Eat In</h2>
-        <h3>Eat In</h3>
-            <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
-        <h3>Eat In</h3>
-            <p>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+        <div class="p-card--bigPotato">
+        <h2 class="c-title__card--white">Eat In</h2>
+            <div class="c-card">
+                <div class="c-card__subcard">
+                    <h3 class="c-title__card__subtitle">Eat In</h3>
+                        <p class="c-article__card">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+                </div>
+                <div class="c-card__subcard">
+                    <h3 class="c-title__card__subtitle">Eat In</h3>
+                        <p class="c-article__card">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <div>
-        <h2>見出しが入ります</h2>
-        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+    </article>
+    <div class="p-container">
+    <div class="p-container__image">     
+    <div class="p-container__color">
+        <div class="p-container__color--small">
+        
+                <h2 class="c-title__bottom">見出しが入ります</h2>
+                <p class="c-article__bottom">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div>
     </div>
+    </div>  
+    </div>
+      
 </main>
-<footer>
-    <a>ショップ情報</a><a>｜</a><a>ヒストリー</a>
-    <p>CopyRight:RaiseTech</p>
+<footer class="l-footer l-footer__text">
+    <div class="p-footer__color">
+    <div class="p-footer__image">    
+        <div class="p-footer__text">
+        <a >ショップ情報</a><a>｜</a><a>ヒストリー</a>
+        </div>
+        <div class="p-footer__text--small">
+        <a>CopyRight:RaiseTech</a>
+        </div>
+    </div>
+    </div>
 </footer>
 <script src="./js/main.js"></script>
+</div>
 </body>
 </html>

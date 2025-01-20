@@ -1,0 +1,25 @@
+.p-card{
+    &--threeBurgers{
+        display: flex;
+        flex-direction: column;
+        
+       
+        margin: 20px 0px 10px 0;
+        background-image: url(../../picture/three-burgers-on-brown-wooden-tray-between-white-ceramic-takeout-hero2.jpg);
+        background-repeat: no-repeat;
+        height: 642px;
+        width: 335px;
+        max-height:auto; //%に
+    }
+    &--bigPotato{
+        display: flex;
+        flex-direction: column;
+        
+        margin: 10px 0px 0px 0;
+        background-image: url(../../picture/humberger-potato-eatin.jpg);
+        background-repeat: no-repeat;
+        height: 642px;
+        width: 335px;
+        max-height: auto; //%に
+    }
+}
