@@ -1,25 +1,74 @@
+@use "../../foundation/global/index" as g;
+
 .p-card{
+ 
+    &__section{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5.3%;
+        @include g.tab{
+            display: flex;
+            width: 50%;
+            /* align-items: center; */
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 0%;
+        }
+    }
+    &__section--right{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 13.07%;
+        @include g.tab{
+        display: flex;
+            width: 50%;
+            /* align-items: center; */
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-bottom: 0%;
+        
+    }
+    }
     &--threeBurgers{
         display: flex;
         flex-direction: column;
-        
-       
-        margin: 20px 0px 10px 0;
+        position: relative;
+        align-items:center;
+        justify-content: flex-end;
         background-image: url(../../picture/three-burgers-on-brown-wooden-tray-between-white-ceramic-takeout-hero2.jpg);
         background-repeat: no-repeat;
-        height: 642px;
-        width: 335px;
-        max-height:auto; //%に
+        background-size: cover;
+        min-height:642px; //%に
+        width:89.3%;
+        aspect-ratio: 335/642;
+        @include g.tab{  
+            aspect-ratio: 616 / 1197; 
+            margin-top: 15.5%;
+            margin-bottom: 16.7%;
+            margin-left: 15.5%;
+            width: 79.8%;
+        }
     }
     &--bigPotato{
         display: flex;
         flex-direction: column;
-        
-        margin: 10px 0px 0px 0;
+        position: relative;
+        align-items:center;
+        justify-content: flex-end;
         background-image: url(../../picture/humberger-potato-eatin.jpg);
         background-repeat: no-repeat;
-        height: 642px;
-        width: 335px;
-        max-height: auto; //%に
+        background-size: cover;
+        aspect-ratio: 336 / 642;
+        min-height: 642px;//%に
+        width:89.6%;
+        @include g.tab{
+            margin-top: 15.5%;
+            margin-bottom: 16.7%;
+            margin-right: 15.5%;
+            width: 79.8%;
+            aspect-ratio: 616 / 1197;
+        }
     }
 }

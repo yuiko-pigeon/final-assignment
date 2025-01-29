@@ -2,31 +2,47 @@
 
 
 .p-footer{
-    &__text--large{
-        display: flex;
+    /*&__text--large{
+        display: none;
+        @include g.tab{
+        display: block;
+        font-family: g.$fontMp;
+        font-weight: g.$Mbold;
         justify-content: center;
         color: g.$color-white;
         font-size: 1.25rem;    //20px
-    }
+        }
+        }       */
     &__text{
-      
+        display: block;
+        font-family: g.$fontMp;
+        font-weight: g.$Mbold;
         color: g.$color-white;
-        font-size: 1.125rem;    //18px
+        @include g.sp{
+            font-size: 1.125rem;    //18px
+        }
+        @include g.tab{
+            font-size:1.25rem;
+        }        
     }
     &__text--small{
-        display: flex;
-        justify-content: center;
+        display: block;
+        font-family: g.$fontMp;
+        font-weight: g.$Mbold;
         color: g.$color-white;
         font-size: 0.875rem;    //14px
+        
     }
     &__color{
+        display: block;
         background-color: g.$color-footerBrown;
         background-size: cover;
         height: 150px;//%に?
     }
     &__image{
+        display: block;
         background-image: url(../../picture/texture-layer.png);
-        background-repeat: repeat;
+        background-repeat: repeat-x;
         background-size: cover;
         height: 150px;//%に
         

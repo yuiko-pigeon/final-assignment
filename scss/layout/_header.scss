@@ -2,16 +2,30 @@
 
 
 .l-header{
-    height: 215px;
+    height: 13.4375rem;//215px
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: g.$color-background-beige;
-    position:relative;
+    /*:relative;*/
+    @include g.tab{
+        height: 13.5625rem;//217px
+    }
+    @include g.pc{
+        width: 80%;
+justify-content: unset;
+        
+    }
     &__article{
         margin:0;
         padding: 0;
         height: 100%;
+        @include g.pc{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items:center ;
+        }
     }
     &__title{
         display: flex;
@@ -19,6 +33,10 @@
         color: g.$color-gray;
         margin:31px 0 0 0;
         padding: 12px;
+        @include g.pc{
+            margin: 0;
+            padding: 0;
+        }
     }
     &__title__small{
         display: block;
@@ -28,5 +46,8 @@
         top: 0;
         right: 0;
         padding: 8px;
+        @include g.pc{
+            display: none;
+        }
         }
 }

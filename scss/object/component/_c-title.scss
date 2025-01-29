@@ -5,29 +5,51 @@
     &__hero{
         display: flex;
         align-items: center;
-        padding-left: 25px;
+        padding-left: 6.7%;
         font-size: 2.25rem;
         color: g.$color-white;
+            @include g.tab{
+                font-size: 2.25rem;
+                padding-left: 10.3%;
+            }
+            @include g.pc{
+                font-size: 2.5rem;
+                padding-left: 5.5%;
+            }
         }
     &__card{
-        display: block;
+        display: flex;
         font: g.$bold 2.5625rem g.$fontR;//41px
         color: g.$color-lightGray;
+        position: absolute;
+        top: 13px;
+        left: 15px;//4.5%?
         }
     &__card--white{
         display: block;
         font-size: 2.5625rem;//41px
         color: g.$color-white;
+        position: absolute;
+        top: 13px;
+        left: 13px;//%?
         }
     &__card__subtitle{
-        display: block;
+        display: flex;
         font-size:1.375rem;//22px
         color:g.$color-brown;
+        margin-bottom: 4px;
+        
         }
-    &__bottom{
+    &__map{
         display: block;
-        font-size: 1.8755rem;//30px
+        font-size: 1.88rem;//30px
         color: g.$color-white;
+        line-height: 2.7843rem;
+        @include g.pc{
+            font-size: 2.25rem;//36px
+            line-height: 3.34125rem;//53.46px
+        }
+
         }
    
     }

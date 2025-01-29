@@ -1,8 +1,17 @@
+@use "../../foundation/global/index" as g;
+
 .p-hero{
     display: flex;
     background-image: url(../../picture/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 285px;
+    width: 100%;
+    aspect-ratio: 375/285;
+    @include g.tab{
+    aspect-ratio: 834/285;
+    }
+    @include g.pc{
+    aspect-ratio: 1553 /530;
+    }
 }

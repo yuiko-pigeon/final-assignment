@@ -1,3 +1,43 @@
+@use "../foundation/global/index" as g;
+
 .l-sidebar{
     display: none;
+    @include g.pc{
+        display: block;
+        width: 20%;
+        height: 100%;
+        background-color: #f5f5f5;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+    &__title{
+   /* display: none;*/
+        display: block;
+        font:g.$bold 2.125rem g.$fontR;//34px
+        color: g.$color-gray;
+        padding: 84px 0 90px 12.5%;
+    }
+    &__title--small{
+            display: block;
+            font:g.$bold 1.5rem g.$fontMp;//24px
+            color: g.$color-gray;
+            padding: 0 0 0 12.5%;
+        }
+    &__menu{
+        display:block;
+        font:g.$Mbold 1.25rem g.$fontMp;//20px
+        color: g.$color-gray;
+    }
+    &__menu--sub{
+        display: block;
+        font:g.$Mbold 1.25rem g.$fontMp;//20px
+        color: g.$color-gray;
+        padding: 12px 0 48px 17.3%;
+    }
+    &__menu--item{
+        line-height: 1.85625rem;//29.7px
+        margin-top: 20px;
+
+    }
 }

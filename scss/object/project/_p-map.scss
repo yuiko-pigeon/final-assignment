@@ -1,0 +1,43 @@
+@use "../../foundation/global/index" as g;
+
+.p-map{
+    display: flex;
+    width: 100vw;
+    aspect-ratio: 375 / 691;
+    @include g.tab{
+        aspect-ratio: unset;
+        height: auto;
+    }  
+    @include g.pc{
+        width: 100%;
+    }
+    &__color{
+        background-color: rgba($color: #000000, $alpha: 0.2855);
+        height: 100%;//%に
+    }
+    &__color--small{
+        background-color: rgba($color: #000000, $alpha: 0.2855);
+        height: 60%;//%に
+        @include g.tab{
+            height: 100%;
+        }
+        @include g.pc{
+            height: 100%;
+            width: 61.1%;
+        }
+    }
+    &__image{
+        background-image: url(../../picture/map-image.jpg);
+        background-size: cover;
+        height: 100%;   //%に
+    }
+    &__textarea{
+        padding: 11.2% 10.7% 15.2%;
+        @include g.tab{
+        padding: 5.03% 3.48% 4.8% 5.04%  ;
+        }
+        @include g.pc{
+        padding: 9.05% 14.10% 7.895% 12.53%;
+        }
+    }
+}
