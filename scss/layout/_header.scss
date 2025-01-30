@@ -10,34 +10,44 @@
     /*:relative;*/
     @include g.tab{
         height: 13.5625rem;//217px
+        position: relative;
     }
     @include g.pc{
         width: 80%;
-justify-content: unset;
-        
+        justify-content: unset;
+        position: unset;
     }
     &__article{
         margin:0;
         padding: 0;
         height: 100%;
-        @include g.pc{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items:center ;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+            @include g.pc{
+                flex-direction: row;
+                justify-content: space-between;
+                align-items:center ;
+                position: relative;
+            }
         }
-    }
     &__title{
         display: flex;
         font: g.$bold 2.5rem g.$fontR;//40px
         color: g.$color-gray;
         margin:31px 0 0 0;
         padding: 12px;
-        @include g.pc{
-            margin: 0;
-            padding: 0;
+            @include g.pc{
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                left: 4.185%;
+                font-size: 4.0rem;//64px
+                line-height: 4.6875rem;//75px
+                }
         }
-    }
     &__title__small{
         display: block;
         font:g.$bold 1.25rem g.$fontR;//20px
@@ -46,8 +56,14 @@ justify-content: unset;
         top: 0;
         right: 0;
         padding: 8px;
-        @include g.pc{
-            display: none;
-        }
+            @include g.tab{
+                font-size: 2.125rem;//34px
+                position: absolute;
+                right: 3%;
+                top:9.2%;
+                }
+            @include g.pc{
+                display: none;
+                }
         }
 }

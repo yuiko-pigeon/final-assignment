@@ -6,14 +6,14 @@
         display: flex;
         align-items: center;
         padding-left: 6.7%;
-        font-size: 2.25rem;
+        font-size: 9.6vw;
         color: g.$color-white;
             @include g.tab{
-                font-size: 2.25rem;
+                font-size: 4.32vw;
                 padding-left: 10.3%;
             }
             @include g.pc{
-                font-size: 2.5rem;
+                font-size: 2.08vw;
                 padding-left: 5.5%;
             }
         }
@@ -24,6 +24,15 @@
         position: absolute;
         top: 13px;
         left: 15px;//4.5%?
+        line-height: 3rem;
+        @include g.tab{
+            font-size: 2.75rem;
+            line-height: 3.22rem;
+        }
+        @include g.pc{
+            font-size: 4.2vw;
+            line-height: 4.9vw;
+        }
         }
     &__card--white{
         display: block;
@@ -32,13 +41,21 @@
         position: absolute;
         top: 13px;
         left: 13px;//%?
+        line-height: 3rem;
+        @include g.tab{
+            font-size: 2.75rem;
+            line-height: 3.22rem;
+        }
+        @include g.pc{
+            font-size: 4.2vw;
+            line-height: 4.9vw;
+        }
         }
     &__card__subtitle{
         display: flex;
         font-size:1.375rem;//22px
         color:g.$color-brown;
         margin-bottom: 4px;
-        
         }
     &__map{
         display: block;

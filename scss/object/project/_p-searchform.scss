@@ -4,17 +4,37 @@
     display: flex;
     margin:28px 0 45px 0;
     justify-content: center;
-    height:40px;
-    border: 1px solid g.$color-gray;
+    height:2.875rem;//46px
+    width: 19.875rem;
+    justify-content: space-between;
+    @include g.tab{
+        width: 34.125rem;//546px
+        }
     @include g.pc{
         margin: 0;
-    }
+        position: absolute;
+        right:1.987rem;//31.79px
+        width: 35%;
+        }
     &__input{
         display: flex;
-        
+        border-radius: 10px 8px 10px 10px;
+        width: 13.5rem;//216px
+        height: 2.875rem;//46px
+        @include g.tab{
+            width: 24.75rem;//396px
+            border-radius: 10px;
+            } 
+        @include g.pc{
+            width: 73%;
+        }
     }
-    &__buttom{
+    &__button{
         display:flex;
-        
-    }
+        border-radius: 10px;
+        width: 5.63rem;
+            @include g.tab{
+            width:24.90%;   
+            }
+        }
 }
