@@ -1,16 +1,53 @@
 @use "../foundation/global/index" as g;
 
 .l-sidebar{
-    display: none;
-    @include g.pc{
+    &__background{
         display: block;
-        width: 20%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba($color: #000000, $alpha: 0.502);
+        z-index: -1;
+        transition: all 0.3s ease-out 1ms;
+        @include g.pc{
+            z-index: -100;
+            right: 0%;
+            background-color: unset;
+        }
+        &.appear{
+            opacity: 1;
+            z-index: 900;
+        }
+    }
+    &__nav{
+        display: block;
+        position: absolute;
+        width: 87.5%;
+        right: -100%;
+        top: 0%;
         height: 100%;
         background-color: #f5f5f5;
-        position: absolute;
-        right: 0%;
-        top: 0%;
-    }
+        z-index: 999;
+        transition: all 0.3s ease-out 1ms;
+            @include g.tab{
+                width: 44%;
+            }
+            @include g.pc{
+                display: block;
+                width: 20%;  
+                height: 100%;//footerに被せない
+                background-color: #f5f5f5;
+                right: 0%;
+                top: 0%;
+                transform: unset;
+            }
+            &.open{
+                right:0%;
+            }
+        }
     &__title{
    /* display: none;*/
         display: block;
@@ -23,21 +60,20 @@
             font:g.$bold 1.5rem g.$fontMp;//24px
             color: g.$color-gray;
             padding: 0 0 0 12.5%;
-        }
+    }
     &__menu{
         display:block;
         font:g.$Mbold 1.25rem g.$fontMp;//20px
         color: g.$color-gray;
     }
-    &__menu--sub{
+    &__menu__list{
         display: block;
         font:g.$Mbold 1.25rem g.$fontMp;//20px
         color: g.$color-gray;
         padding: 12px 0 48px 17.3%;
     }
-    &__menu--item{
+    &__menu__item{
         line-height: 1.85625rem;//29.7px
         margin-top: 20px;
-
     }
 }

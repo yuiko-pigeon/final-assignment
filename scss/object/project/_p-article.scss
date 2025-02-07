@@ -8,22 +8,21 @@
     margin-left:auto;
     margin-right: auto;
     /*flex-wrap: wrap;*/
-    align-items: center;
+    align-items: stretch;
     gap:20px;
 
     @include g.pc{
         display:flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        gap:0px;
+        
+        gap:0px
     }
     @include g.tab{
         display:flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        gap:0px;
+        
     }
    
 }

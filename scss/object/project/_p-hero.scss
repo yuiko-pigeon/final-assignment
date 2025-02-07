@@ -8,10 +8,10 @@
     background-position: center;
     width: 100%;
     aspect-ratio: 375/285;
-    @include g.tab{
-    aspect-ratio: 834/285;
-    }
-    @include g.pc{
-    aspect-ratio: 1553 /530;
-    }
+        @include g.tab{
+        aspect-ratio: 834/285;
+        }
+        @include g.pc{
+        aspect-ratio: 1553 /530;
+        }
 }

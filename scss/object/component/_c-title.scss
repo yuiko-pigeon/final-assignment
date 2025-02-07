@@ -1,7 +1,6 @@
 @use "../../foundation/global/index" as g;
 
 .c-title{
-    
     &__hero{
         display: flex;
         align-items: center;
@@ -16,58 +15,7 @@
                 font-size: 2.08vw;
                 padding-left: 5.5%;
             }
-        }
-    &__card{
-        display: flex;
-        font: g.$bold 2.5625rem g.$fontR;//41px
-        color: g.$color-lightGray;
-        position: absolute;
-        top: 13px;
-        left: 15px;//4.5%?
-        line-height: 3rem;
-        @include g.tab{
-            font-size: 2.75rem;
-            line-height: 3.22rem;
-        }
-        @include g.pc{
-            font-size: 4.2vw;
-            line-height: 4.9vw;
-        }
-        }
-    &__card--white{
-        display: block;
-        font-size: 2.5625rem;//41px
-        color: g.$color-white;
-        position: absolute;
-        top: 13px;
-        left: 13px;//%?
-        line-height: 3rem;
-        @include g.tab{
-            font-size: 2.75rem;
-            line-height: 3.22rem;
-        }
-        @include g.pc{
-            font-size: 4.2vw;
-            line-height: 4.9vw;
-        }
-        }
-    &__card__subtitle{
-        display: flex;
-        font-size:1.375rem;//22px
-        color:g.$color-brown;
-        margin-bottom: 4px;
-        }
-    &__map{
-        display: block;
-        font-size: 1.88rem;//30px
-        color: g.$color-white;
-        line-height: 2.7843rem;
-        @include g.pc{
-            font-size: 2.25rem;//36px
-            line-height: 3.34125rem;//53.46px
-        }
-
-        }
-   
     }
+    
+}
     

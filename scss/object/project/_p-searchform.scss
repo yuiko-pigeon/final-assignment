@@ -5,36 +5,59 @@
     margin:28px 0 45px 0;
     justify-content: center;
     height:2.875rem;//46px
-    width: 19.875rem;
+    width: 84.8%;
     justify-content: space-between;
-    @include g.tab{
-        width: 34.125rem;//546px
-        }
-    @include g.pc{
-        margin: 0;
-        position: absolute;
-        right:1.987rem;//31.79px
-        width: 35%;
-        }
-    &__input{
-        display: flex;
-        border-radius: 10px 8px 10px 10px;
-        width: 13.5rem;//216px
-        height: 2.875rem;//46px
         @include g.tab{
-            width: 24.75rem;//396px
-            border-radius: 10px;
-            } 
+            width: 65.5%;//546px
+            }
         @include g.pc{
-            width: 73%;
-        }
+            margin: 0;
+            position: absolute;
+            right:1.987rem;//31.79px
+            width: 35%;
+            }
+/*虫眼鏡アイコン設置のため、inputと同じサイズの親要素のボックス用意。*/   
+     &__box{
+        display: flex;
+        position: relative;
+        border-radius: 10px 8px 10px 10px;
+        width: 67.9%;//216px
+        height: 2.875rem;//46px
+            @include g.tab{
+                width: 72.5%;//396px
+                border-radius: 10px;
+                } 
+            @include g.pc{
+                width: 73%;
+            }
     }
+    &__box::before{
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url(../../picture/mushimegane.png) no-repeat center center / auto 100%;
+        display: inline-block;
+        position: absolute;
+        top: 11px;
+        left: 14px;
+     }
+/*むしろ、width:100%;で親要素と同じサイズのinput用意*/
+    &__input{
+        border-radius: 10px 8px 10px 10px;
+        width: 100%;
+        padding-left: 48px;
+        border: solid 1px g.$color-gray;
+            @include g.tab{
+                border-radius: 10px;
+            }
+    }    
     &__button{
         display:flex;
         border-radius: 10px;
-        width: 5.63rem;
+        width: 28.3%;
+        border: solid 1px g.$color-gray;
             @include g.tab{
             width:24.90%;   
             }
-        }
+    }
 }

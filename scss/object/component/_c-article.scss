@@ -2,32 +2,8 @@
 
 .c-article{
     color: g.$color-brown;
-    
-    &__card{
-    line-height: 1.485rem;//23.76px
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: g.$color-brown;
-    font-weight: g.$Mbold;//400
-    font-size: 1rem; //16px
-    height: auto;//% とりあえず
-    width: 100%;
-    margin-top: 4px;
-    padding: 0;
-    
-    }
-    &--wideLineSpacing{
-        line-height:1.5rem;//24px
-    }
-    &__map{
-        display: block;
-        color: g.$color-white;
-        font-size: 0.875rem;    //14px
-        line-height: 2.0625rem; //33px
-        @include g.pc{
-            font-size: 1rem;    //16px
-            line-height: 2.0625rem; //33px
+        &--wideLineSpacing{
+            line-height:1.5rem;//24px
         }
-    }
+    
 }

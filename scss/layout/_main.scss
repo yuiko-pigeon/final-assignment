@@ -1,7 +1,7 @@
 @use "../foundation/global/index" as g;
 
 .l-wrapper{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     width: auto;
@@ -9,13 +9,12 @@
     position: relative;
 }
 .l-main{
-flex-grow: 1;
-@include g.pc{
-    width: 80%;
-}
-
-&__font {
-  font-family: g.$fontMp;
-  font-weight: g.$bold;//700
-}
+    flex-grow: 1;
+        @include g.pc{
+            width: 80%;
+        }
+    &__font {
+    font-family: g.$fontMp;
+    font-weight: g.$bold;//700
+    }
 }

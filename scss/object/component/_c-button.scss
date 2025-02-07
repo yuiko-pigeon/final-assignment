@@ -1,0 +1,47 @@
+@use "../../foundation/global/index" as g;
+
+.c-button{
+    display: block;
+    &__close__area{
+        display: flex;
+        align-items: center;
+        width: 32px;//32px 2rem
+        /*height: ;//36px 2.25rem*/
+        aspect-ratio: 32/36;
+        position: absolute;
+        top: 1rem;
+        right:1rem;
+        cursor: pointer;
+        @include g.pc{
+            display: none;
+        }
+    }
+    &__close{
+        display: flex;
+        content: "";
+        width: 32px;//32px 2rem
+        height: 2px;//36px 2.25rem*/
+        background-color: aqua;
+        position:relative;
+    }
+    &__close::before{
+        content:"";
+        position: absolute;
+        font-family: g.$fontMp;
+        width: 32px;
+        height: 2px;
+        top: 0px;
+        background-color: g.$color-gray;
+        transform: rotate(45deg);
+    }
+    &__close::after{
+        content:"";
+        position: absolute;
+        font-family: g.$fontMp;
+        width: 32px;
+        height: 2px;
+        top: 0px;
+        background-color: g.$color-gray;
+        transform: rotate(-45deg);
+    }
+}

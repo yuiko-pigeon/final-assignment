@@ -1,0 +1,59 @@
+@use "../../foundation/global/index" as g;
+
+.c-underline{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1.2088rem;
+ }
+.c-underline::before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -1.2088rem;
+      background-color: g.$color-white;
+      height: 0.25rem;
+      width: 9.05vw;
+        @include g.tab{
+            width:4.31vw;
+        }
+        @include g.pc{
+            width: 3.29vw;
+        }
+ }
+.c-underline--large{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1.3338rem;
+ }
+.c-underline--large::before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -1.3338rem;
+      background-color: g.$color-white;
+      height: 0.25rem;
+      width: 9.05vw;
+        @include g.tab{
+            width:4.31vw;
+        }
+        @include g.pc{
+            width: 3.29vw;
+        }
+ }
+.c-underline--long{
+   display: inline-block;
+   position: relative;
+   margin-bottom: 0.9375rem;
+}
+.c-underline--long::before{
+     content: '';
+     display: inline-block;
+     position: absolute;
+     left: 0;
+     bottom: -0.9375rem;
+     background-color: g.$color-white;
+     height: 0.125rem;
+     width: 4.6875rem;
+}
