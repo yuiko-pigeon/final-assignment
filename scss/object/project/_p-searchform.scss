@@ -2,7 +2,7 @@
 
 .p-searchform{
     display: flex;
-    margin:28px 0 45px 0;
+    margin:1.75rem 0 2.81rem 0;
     justify-content: center;
     height:2.875rem;//46px
     width: 84.8%;
@@ -20,7 +20,7 @@
      &__box{
         display: flex;
         position: relative;
-        border-radius: 10px 8px 10px 10px;
+        border-radius: 0.625rem 0.5rem 0.625rem 0.625rem;
         width: 67.9%;//216px
         height: 2.875rem;//46px
             @include g.tab{
@@ -33,29 +33,30 @@
     }
     &__box::before{
         content: "";
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
         background: url(../../picture/mushimegane.png) no-repeat center center / auto 100%;
         display: inline-block;
         position: absolute;
-        top: 11px;
-        left: 14px;
+        top: 0.6875rem;//11px
+        left: 0.875rem;//14px
      }
 /*むしろ、width:100%;で親要素と同じサイズのinput用意*/
     &__input{
-        border-radius: 10px 8px 10px 10px;
+        border-radius: 0.625rem 0.5rem 0.625rem 0.625rem;
         width: 100%;
-        padding-left: 48px;
-        border: solid 1px g.$color-gray;
+        padding-left: 3rem;
+        border: solid 0.0625rem g.$color-gray;
             @include g.tab{
                 border-radius: 10px;
             }
     }    
     &__button{
         display:flex;
-        border-radius: 10px;
+        justify-content: center;
+        border-radius: 0.625rem;
         width: 28.3%;
-        border: solid 1px g.$color-gray;
+        border: solid 0.0625rem g.$color-gray;
             @include g.tab{
             width:24.90%;   
             }

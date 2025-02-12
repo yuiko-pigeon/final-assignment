@@ -5,13 +5,16 @@
     &__close__area{
         display: flex;
         align-items: center;
-        width: 32px;//32px 2rem
+        width: 2rem;//32px 2rem
         /*height: ;//36px 2.25rem*/
         aspect-ratio: 32/36;
         position: absolute;
-        top: 1rem;
-        right:1rem;
+        top: 0.5rem;
+        right:3.35%;
         cursor: pointer;
+        @include g.tab{
+            aspect-ratio: 32/37;
+        }
         @include g.pc{
             display: none;
         }
@@ -19,8 +22,8 @@
     &__close{
         display: flex;
         content: "";
-        width: 32px;//32px 2rem
-        height: 2px;//36px 2.25rem*/
+        /*width: 2rem;//32px 2rem*/
+        height: 2px;//36px 2.25rem
         background-color: aqua;
         position:relative;
     }
@@ -28,9 +31,10 @@
         content:"";
         position: absolute;
         font-family: g.$fontMp;
-        width: 32px;
-        height: 2px;
-        top: 0px;
+        width: 2.828rem;
+        height: 0.375rem;
+        top: -0.125rem;
+        left:-0.3125rem;
         background-color: g.$color-gray;
         transform: rotate(45deg);
     }
@@ -38,9 +42,10 @@
         content:"";
         position: absolute;
         font-family: g.$fontMp;
-        width: 32px;
-        height: 2px;
-        top: 0px;
+        width: 2.828rem;
+        height: 0.375rem;
+        top: -0.125rem;
+        left:-0.3125rem;
         background-color: g.$color-gray;
         transform: rotate(-45deg);
     }

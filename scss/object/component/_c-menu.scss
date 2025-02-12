@@ -1,0 +1,9 @@
+@use "../../foundation/global/index" as g;
+
+.c-menu{
+    display: none;
+            
+            @include g.pc{
+                display: block;
+            }
+        }

@@ -1,11 +1,11 @@
 @use "../foundation/global/index" as g;
 
 .l-footer{
-    height: 150px;
+    height: 9.375rem;
     width: 100%;
     &__inner{
         display: block;
-        height: 150px;
+        height: 9.375rem;;
     }
     &__textarea{
         display: flex;

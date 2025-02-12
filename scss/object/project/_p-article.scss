@@ -9,14 +9,14 @@
     margin-right: auto;
     /*flex-wrap: wrap;*/
     align-items: stretch;
-    gap:20px;
+    gap:1.25rem;
 
     @include g.pc{
         display:flex;
         flex-direction: row;
         justify-content: center;
         
-        gap:0px
+        gap:0rem;
     }
     @include g.tab{
         display:flex;

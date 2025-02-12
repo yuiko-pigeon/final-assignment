@@ -25,15 +25,15 @@
     &__nav{
         display: block;
         position: absolute;
-        width: 87.5%;
+        width: 20.5rem;//87.5%
         right: -100%;
         top: 0%;
         height: 100%;
         background-color: #f5f5f5;
         z-index: 999;
-        transition: all 0.3s ease-out 1ms;
+        transition: all 0.3s linear 0ms;
             @include g.tab{
-                width: 44%;
+                width: 22.94rem;//44%
             }
             @include g.pc{
                 display: block;
@@ -46,6 +46,7 @@
             }
             &.open{
                 right:0%;
+                transition: all 0.3s linear 500ms;
             }
         }
     &__title{
@@ -53,7 +54,10 @@
         display: block;
         font:g.$bold 2.125rem g.$fontR;//34px
         color: g.$color-gray;
-        padding: 84px 0 90px 12.5%;
+        padding: 5.5rem 0 5.625rem 12.5%;
+        @include g.pc{
+        padding: 5.25rem 0 5.625rem 12.5%;
+        }
     }
     &__title--small{
             display: block;
@@ -67,13 +71,14 @@
         color: g.$color-gray;
     }
     &__menu__list{
+        width: 11.25rem;
         display: block;
         font:g.$Mbold 1.25rem g.$fontMp;//20px
         color: g.$color-gray;
-        padding: 12px 0 48px 17.3%;
+        padding: 0.75rem 0 3rem 17.3%;
     }
     &__menu__item{
         line-height: 1.85625rem;//29.7px
-        margin-top: 20px;
+        margin-top: 1.25rem;//20px
     }
 }

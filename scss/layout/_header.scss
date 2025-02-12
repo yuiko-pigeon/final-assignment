@@ -36,8 +36,8 @@
         display: flex;
         font: g.$bold 2.5rem g.$fontR;//40px
         color: g.$color-gray;
-        margin:31px 0 0 0;
-        padding: 12px;
+        margin:1.94rem 0 0 0;
+        padding: 0.75rem;
             @include g.pc{
                 margin: 0;
                 padding: 0;
@@ -54,7 +54,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        padding: 8px;
+        padding: 0.5rem; //8px
         background-color: g.$color-background-beige;
         border: unset;
         cursor: pointer;
