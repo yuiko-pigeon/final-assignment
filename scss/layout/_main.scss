@@ -1,13 +1,5 @@
 @use "../foundation/global/index" as g;
 
-.l-wrapper{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-    box-sizing: border-box; //box-sizing:inherit は、親要素のbox-sizingを継承する
-    position: relative;
-}
 .l-main{
     flex-grow: 1;
         @include g.pc{

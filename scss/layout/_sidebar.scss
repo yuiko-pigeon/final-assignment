@@ -43,10 +43,13 @@
                 right: 0%;
                 top: 0%;
                 transform: unset;
+                z-index: -1;
             }
             &.open{
                 right:0%;
                 transition: all 0.3s linear 500ms;
+                overflow: auto;
+                max-height: 100vh;
             }
         }
     &__title{

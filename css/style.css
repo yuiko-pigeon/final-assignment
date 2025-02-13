@@ -236,15 +236,6 @@ input, select {
   }
 }
 
-.l-wrapper {
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  width: auto;
-  box-sizing: border-box;
-  position: relative;
-}
-
 .l-main {
   flex-grow: 1;
 }
@@ -306,11 +297,14 @@ input, select {
     right: 0%;
     top: 0%;
     transform: unset;
+    z-index: -1;
   }
 }
 .l-sidebar__nav.open {
   right: 0%;
   transition: all 0.3s linear 500ms;
+  overflow: auto;
+  max-height: 100vh;
 }
 .l-sidebar__title {
   /* display: none;*/
@@ -347,6 +341,19 @@ input, select {
   margin-top: 1.25rem;
 }
 
+.l-wrapper {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.l-wrapper.fix {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
 .c-title__hero {
   display: flex;
   align-items: center;
@@ -376,19 +383,31 @@ input, select {
   width: 2rem;
   /*height: ;//36px 2.25rem*/
   aspect-ratio: 32/36;
+  cursor: pointer;
   position: absolute;
   top: 0.5rem;
-  right: 3.35%;
-  cursor: pointer;
+  right: -100%;
+  transition: all 0.3s linear 0ms;
 }
 @media screen and (min-width: 768px) {
   .c-button__close__area {
     aspect-ratio: 32/37;
+    top: 1.25rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .c-button__close__area {
     display: none;
+  }
+}
+.c-button__close__area.fixButton {
+  position: fixed;
+  right: 0.69rem;
+  transition: all 0.3s linear 500ms;
+}
+@media screen and (min-width: 768px) {
+  .c-button__close__area.fixButton {
+    right: 1.56rem;
   }
 }
 .c-button__close {

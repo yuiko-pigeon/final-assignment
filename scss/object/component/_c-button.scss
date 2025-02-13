@@ -8,16 +8,27 @@
         width: 2rem;//32px 2rem
         /*height: ;//36px 2.25rem*/
         aspect-ratio: 32/36;
-        position: absolute;
-        top: 0.5rem;
-        right:3.35%;
         cursor: pointer;
-        @include g.tab{
-            aspect-ratio: 32/37;
+        position: absolute;
+        top:0.5rem;
+        right:-100%;
+        transition: all 0.3s linear 0ms;
+            @include g.tab{
+                aspect-ratio: 32/37;
+                top: 1.25rem;
+            }
+            @include g.pc{
+                display: none;
+            }
+        &.fixButton{
+            position: fixed;
+            right:0.69rem;
+            transition: all 0.3s linear 500ms;
+                @include g.tab{
+                    right: 1.56rem;
+                }
         }
-        @include g.pc{
-            display: none;
-        }
+       
     }
     &__close{
         display: flex;
