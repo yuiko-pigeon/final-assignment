@@ -7,6 +7,7 @@
     width: auto;
     box-sizing: border-box; //box-sizing:inherit は、親要素のbox-sizingを継承する
     position: relative;
+    overflow-x: hidden;
    &.fix{
     overflow: hidden;
     max-height: 100vh;
