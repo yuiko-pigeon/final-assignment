@@ -374,6 +374,12 @@ input, select {
     padding-left: 5.5%;
   }
 }
+.c-title__arcive {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 41.58px;
+}
 
 .c-button {
   display: block;
@@ -444,9 +450,9 @@ input, select {
 
 .c-article {
   color: #3C2A10;
-}
-.c-article--wideLineSpacing {
   line-height: 1.5rem;
+  font: 1rem;
+  font-weight: 400;
 }
 
 .c-underline {
@@ -554,6 +560,15 @@ input, select {
     flex-direction: row;
     justify-content: center;
   }
+}
+.p-article__area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 42px 1fr;
+  width: 89.3%;
+  min-height: auto;
+  margin: auto;
+  align-items: center;
 }
 
 .p-card {
@@ -822,6 +837,7 @@ input, select {
 
 .p-hero {
   display: flex;
+  align-items: center;
   background-image: url(../../picture/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -838,6 +854,61 @@ input, select {
   .p-hero {
     aspect-ratio: 1553/530;
   }
+}
+.p-hero__blackScreen {
+  background-color: rgba(0, 0, 0, 0.2855);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+}
+.p-hero__menu {
+  background-image: url(../../picture/three-burgers-on-brown-wooden-tray-between-white-ceramic-takeout-hero2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 375/285;
+  position: relative;
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .p-hero__menu {
+    aspect-ratio: 834/285;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-hero__menu {
+    aspect-ratio: 1553/530;
+  }
+}
+.p-hero__title--area {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6.7%;
+  font-size: 9.6vw;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .p-hero__title--area {
+    font-size: 4.32vw;
+    padding-left: 10.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-hero__title--area {
+    font-size: 2.08vw;
+    padding-left: 5.5%;
+  }
+}
+.p-hero__title--menu {
+  line-height: 2.637rem;
+  font: 700 2.25rem "Roboto", Noto Sans JP, MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+}
+.p-hero__title--menucontent {
+  font-size: 1rem;
+  line-height: 1.485rem;
 }
 
 .p-map {

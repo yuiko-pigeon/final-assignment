@@ -2,8 +2,8 @@
 
 .c-article{
     color: g.$color-brown;
-        &--wideLineSpacing{
-            line-height:1.5rem;//24px
-        }
-    
+    line-height:1.5rem;//24px
+    font: 1rem;
+    font-weight: g.$Mbold;
+
 }

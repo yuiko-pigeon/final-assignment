@@ -24,5 +24,13 @@
         justify-content: center;
         
     }
-   
+    &__area{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 42px 1fr;
+        width:89.3%;
+        min-height: auto;
+        margin: auto;
+        align-items: center;
+    }
 }

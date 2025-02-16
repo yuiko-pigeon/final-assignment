@@ -2,6 +2,7 @@
 
 .p-hero{
     display: flex;
+    align-items:center;
     background-image: url(../../picture/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,4 +15,53 @@
         @include g.pc{
         aspect-ratio: 1553 /530;
         }
+    &__blackScreen{
+        background-color: rgba($color: #000000, $alpha: 0.2855);
+        height: 100%;
+        display: flex;
+        align-items:center;
+        position: relative;
+        z-index:20
+    }
+    &__menu{
+        background-image: url(../../picture/three-burgers-on-brown-wooden-tray-between-white-ceramic-takeout-hero2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        aspect-ratio: 375/285;
+        position: relative;
+        z-index: 10;
+            @include g.tab{
+            aspect-ratio: 834/285;
+            }
+            @include g.pc{
+            aspect-ratio: 1553 /530;
+            }
+    }
+    &__title--area{
+        display: flex;
+        flex-direction:column ;
+        padding-left: 6.7%;
+        font-size: 9.6vw;
+        color: g.$color-white;
+            @include g.tab{
+                font-size: 4.32vw;
+                padding-left: 10.3%;
+            }
+            @include g.pc{
+                font-size: 2.08vw;
+                padding-left: 5.5%;
+            }
+    }
+    &__title--menu{
+        line-height: 2.637rem;//42.19px
+        font: g.$bold 2.25rem g.$fontR;
+    }
+    &__title--menucontent{
+        font-size: 1rem;
+        line-height: 1.485rem;//23.76px
+
+    }
+    
 }
