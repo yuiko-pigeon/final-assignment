@@ -1,0 +1,88 @@
+@use "../../foundation/global/index" as g;
+
+.p-pagenation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto 30px auto;
+    width: 89.2%;
+    @include g.tab{
+        display: none;
+    }
+    &__prev{
+        display: flex;
+        font-size: 1rem;
+        font-weight: g.$Mbold;
+        color:g.$color-gray;
+    }
+    &__next{
+        display: flex;
+        font-size: 1rem;
+        font-weight: g.$Mbold;
+        color:g.$color-gray;
+    }
+    &__icon--area{
+        display: flex;
+        align-items: center;
+        width: 17.53px;
+        height: 17.07px;
+    }
+    &__icon--prev{
+        display: block;
+        width: 12.072px;
+        height: 12.072px;
+        border-bottom: solid 1px g.$color-gray;
+        border-left: solid 1px  g.$color-gray;
+        transform: rotate(45deg);
+        position: relative;
+    }
+    &__icon--next{
+        display: block;
+        width: 12.072px;
+        height: 12.072px;
+        border-bottom: solid 1px g.$color-gray;
+        border-left: solid 1px  g.$color-gray;
+        transform: rotate(-135deg);
+        position: relative;
+    }
+
+    &__icon--prev::before,&__icon--next::before{
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        width: 12.072px;
+        height: 12.072px;
+        border-bottom: solid 1px g.$color-gray;
+        border-left: solid 1px  g.$color-gray;
+        }
+    &__text--prev{
+        display: flex;
+        margin-left: 8.18px;
+        @include g.tab{
+            display: none;
+        }
+    }
+    &__text--next{
+        display: flex;
+        margin-right: 8.18px;
+        @include g.tab{
+            display: none;
+        }
+    }
+    /*&icon--next{
+        display: block;
+        width: 12.072px;
+        height: 12.072px;
+        border-top: solid 1px g.$color-gray;
+        border-left: solid 1px  g.$color-gray;
+        transform: rotate(-135deg);
+        position: relative;
+    }*/
+    &__text--list{
+        display: none;
+        @include g.tab{
+            display: flex;
+        }
+    }
+}

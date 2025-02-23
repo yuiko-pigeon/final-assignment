@@ -60,4 +60,23 @@
         background-color: g.$color-gray;
         transform: rotate(-45deg);
     }
+    &__transmit{
+        border-radius: 45px;
+        border: none;
+        width: 163.16px;
+        height:42.47px;
+        margin: 0 auto 43.65px auto;
+        @include g.tab{
+            width: 43.14%;
+            margin: 0;
+            
+        }
+    }
+    &__text{
+        font: g.$bold 1rem g.$fontMp;
+        color: g.$color-gray;
+        text-align: center;
+        line-height: 1.0625rem;
+    }
+
 }

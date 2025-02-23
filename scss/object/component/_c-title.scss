@@ -21,6 +21,11 @@
         font-size: 1.75rem;//28px
         font-weight: g.$bold;
         line-height: 41.58px;
+        color: g.$color-brown;
+        @include g.tab{
+            font-size: 2.25rem;//36px
+            line-height: 3.34rem;//53.46px
+        }
     }
     
 }

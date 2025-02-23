@@ -28,9 +28,23 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 42px 1fr;
+        row-gap: 1.56rem;
         width:89.3%;
         min-height: auto;
-        margin: auto;
+        margin: 2rem auto 19px auto;
         align-items: center;
+        @include g.tab{
+            margin: 4.68% auto 4.9% auto;
+        }
+    }
+
+}
+
+.p-article__tab{
+    @include g.tab{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
     }
 }

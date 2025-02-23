@@ -3,7 +3,9 @@
 .c-article{
     color: g.$color-brown;
     line-height:1.5rem;//24px
-    font: 1rem;
+    font-size: 1rem;
     font-weight: g.$Mbold;
-
+    @include g.tab{
+        line: height 1.485rem;//23.76px
+    }
 }

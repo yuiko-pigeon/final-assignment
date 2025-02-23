@@ -1,0 +1,34 @@
+@use "../../foundation/global/index" as g;
+
+.c-pagenation{
+    &__link{
+        display: block;
+        cursor: pointer;
+        &:link{
+            color: g.$color-gray;
+            text-decoration: none;
+        }
+        &:visited{
+            color: g.$color-gray;
+            text-decoration: none;
+        }
+        &:hover{
+            color: g.$color-gray;
+            text-decoration: underline;
+            text-decoration-color: g.$color-gray;
+            
+        }
+        &:focus{
+            color: g.$color-gray;
+            text-decoration: none;
+        }
+        &:active{
+            color: g.$color-gray;
+            text-decoration: none;
+        } 
+    }
+    &__link--none{
+        text-decoration: none;
+        color: g.$color-white;
+    }
+}

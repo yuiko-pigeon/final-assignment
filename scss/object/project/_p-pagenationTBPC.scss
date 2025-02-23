@@ -1,0 +1,34 @@
+@use "../../foundation/global/index" as g;
+
+.p-pagenationTBPC{
+    display: none;
+        @include g.tab{
+            display: flex;
+            color: g.$color-gray; 
+            font:g.$bold 1rem/33px g.$fontR;
+            align-items: center;
+            justify-content: center;
+            margin: 100px auto 30px auto;
+            width: 89.2%;
+        }
+        &__pagenumber{
+            font-weight: g.$bold;
+            padding-right: 1.0738rem;
+        }
+        &__list{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            padding:0 1.2057rem;
+        }
+        &__page{
+            border: 1px solid;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+        }
+        &__background{
+            color: g.$color-white;
+            background-color: g.$color-brown;
+        }
+}

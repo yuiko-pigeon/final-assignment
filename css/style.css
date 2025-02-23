@@ -339,6 +339,27 @@ input, select {
 .l-sidebar__menu__item {
   line-height: 1.85625rem;
   margin-top: 1.25rem;
+  cursor: pointer;
+}
+.l-sidebar__menu__item:link {
+  color: #707070;
+  text-decoration: none;
+}
+.l-sidebar__menu__item:visited {
+  color: #707070;
+  text-decoration: none;
+}
+.l-sidebar__menu__item:hover {
+  color: #3C2A10;
+  text-decoration: none;
+}
+.l-sidebar__menu__item:focus {
+  color: #707070;
+  text-decoration: none;
+}
+.l-sidebar__menu__item:active {
+  color: #707070;
+  text-decoration: none;
 }
 
 .l-wrapper {
@@ -379,6 +400,13 @@ input, select {
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 41.58px;
+  color: #3C2A10;
+}
+@media screen and (min-width: 768px) {
+  .c-title__arcive {
+    font-size: 2.25rem;
+    line-height: 3.34rem;
+  }
 }
 
 .c-button {
@@ -447,12 +475,36 @@ input, select {
   background-color: #707070;
   transform: rotate(-45deg);
 }
+.c-button__transmit {
+  border-radius: 45px;
+  border: none;
+  width: 163.16px;
+  height: 42.47px;
+  margin: 0 auto 43.65px auto;
+}
+@media screen and (min-width: 768px) {
+  .c-button__transmit {
+    width: 43.14%;
+    margin: 0;
+  }
+}
+.c-button__text {
+  font: 700 1rem "M PLUS 1p", Noto Sans JP, MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+  color: #707070;
+  text-align: center;
+  line-height: 1.0625rem;
+}
 
 .c-article {
   color: #3C2A10;
   line-height: 1.5rem;
-  font: 1rem;
+  font-size: 1rem;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .c-article {
+    line: height 1.485rem;
+  }
 }
 
 .c-underline {
@@ -535,6 +587,37 @@ input, select {
   }
 }
 
+.c-pagenation__link {
+  display: block;
+  cursor: pointer;
+}
+.c-pagenation__link:link {
+  color: #707070;
+  text-decoration: none;
+}
+.c-pagenation__link:visited {
+  color: #707070;
+  text-decoration: none;
+}
+.c-pagenation__link:hover {
+  color: #707070;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #707070;
+          text-decoration-color: #707070;
+}
+.c-pagenation__link:focus {
+  color: #707070;
+  text-decoration: none;
+}
+.c-pagenation__link:active {
+  color: #707070;
+  text-decoration: none;
+}
+.c-pagenation__link--none {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .p-article {
   display: flex;
   flex-direction: column;
@@ -565,10 +648,24 @@ input, select {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 42px 1fr;
+  row-gap: 1.56rem;
   width: 89.3%;
   min-height: auto;
-  margin: auto;
+  margin: 2rem auto 19px auto;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .p-article__area {
+    margin: 4.68% auto 4.9% auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-article__tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .p-card {
@@ -580,6 +677,7 @@ input, select {
   justify-self: center;
   width: 90.4%;
   padding-top: 10rem;
+  /*arcive*/
 }
 @media screen and (min-width: 768px) {
   .p-card {
@@ -759,6 +857,126 @@ input, select {
   margin-top: 0.25rem;
   padding: 0;
 }
+.p-card__section--arcive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  justify-self: center;
+  width: 90.4%;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-card__section--arcive {
+    flex-direction: column;
+    width: 90.4%;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-card__section--arcive {
+    width: 95%;
+  }
+}
+.p-card__arcive {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  flex-direction: column;
+  position: relative;
+  min-height: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-card__arcive {
+    grid-template-columns: 50% 50%;
+    align-items: stretch;
+    /*flex-direction: row;*/
+  }
+}
+.p-card__image--window {
+  background-image: url(../../picture/window.png);
+  background-repeat: no-repeat;
+  background-size: 123%;
+  background-position: -30px -17px;
+  width: 100%;
+  aspect-ratio: 336.11/230.53;
+}
+@media screen and (min-width: 768px) {
+  .p-card__image--window {
+    aspect-ratio: 378.28/354.5;
+    background-size: 168%;
+    background-position: 38% 70%;
+  }
+}
+.p-card__textarea {
+  background-color: #3C2A10;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+}
+.p-card__title--arcive {
+  font-size: 20px;
+  line-height: 29.7px;
+  margin-top: 32.47px;
+  margin-bottom: 21px;
+  margin-left: 4.72%;
+}
+@media screen and (min-width: 768px) {
+  .p-card__title--arcive {
+    line-height: 29.7px;
+    margin: 0;
+    padding-top: 8.59%;
+    padding-bottom: 5.56%;
+    padding-left: 8.99%;
+  }
+}
+.p-card__title--arcive--small {
+  font-size: 1rem;
+  line-height: 23.76px;
+  margin-bottom: 1.85%;
+  margin-left: 4.72%;
+}
+@media screen and (min-width: 768px) {
+  .p-card__title--arcive--small {
+    line-height: 23.76px;
+    padding-left: 8.99%;
+    padding-bottom: 1.85%;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+.p-card__text--arcive {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 23.76px;
+  width: 90.48%;
+  margin: 0 auto 40px auto;
+}
+@media screen and (min-width: 768px) {
+  .p-card__text--arcive {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 23.76px;
+    width: 75.08%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 11.9%;
+    padding-left: 8.99%;
+  }
+}
+.p-card__button--area {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .p-card__button--area {
+    display: flex;
+    height: 24.3%;
+    justify-content: center;
+    margin-bottom: 11.54%;
+  }
+}
 
 .p-searchform {
   display: flex;
@@ -856,7 +1074,7 @@ input, select {
   }
 }
 .p-hero__blackScreen {
-  background-color: rgba(0, 0, 0, 0.2855);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   display: flex;
   align-items: center;
@@ -864,10 +1082,10 @@ input, select {
   z-index: 20;
 }
 .p-hero__menu {
-  background-image: url(../../picture/three-burgers-on-brown-wooden-tray-between-white-ceramic-takeout-hero2.jpg);
+  background-image: url(../../picture/three-burgers-zoom.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 270%;
+  background-position: 14.27% 46.8%;
   width: 100%;
   aspect-ratio: 375/285;
   position: relative;
@@ -876,6 +1094,9 @@ input, select {
 @media screen and (min-width: 768px) {
   .p-hero__menu {
     aspect-ratio: 834/285;
+    background-size: 120%;
+    background-position: 50% 46.5%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -894,6 +1115,7 @@ input, select {
   .p-hero__title--area {
     font-size: 4.32vw;
     padding-left: 10.3%;
+    width: 301px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -905,10 +1127,22 @@ input, select {
 .p-hero__title--menu {
   line-height: 2.637rem;
   font: 700 2.25rem "Roboto", Noto Sans JP, MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .p-hero__title--menu {
+    font-size: 3.75rem;
+    margin: 0%;
+  }
 }
 .p-hero__title--menucontent {
   font-size: 1rem;
   line-height: 1.485rem;
+}
+@media screen and (min-width: 768px) {
+  .p-hero__title--menucontent {
+    padding-left: 19px;
+  }
 }
 
 .p-map {
@@ -1051,5 +1285,164 @@ input, select {
   .p-menu {
     display: none;
   }
+}
+
+.p-pagenation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto 30px auto;
+  width: 89.2%;
+  /*&icon--next{
+      display: block;
+      width: 12.072px;
+      height: 12.072px;
+      border-top: solid 1px g.$color-gray;
+      border-left: solid 1px  g.$color-gray;
+      transform: rotate(-135deg);
+      position: relative;
+  }*/
+}
+@media screen and (min-width: 768px) {
+  .p-pagenation {
+    display: none;
+  }
+}
+.p-pagenation__prev {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #707070;
+}
+.p-pagenation__next {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #707070;
+}
+.p-pagenation__icon--area {
+  display: flex;
+  align-items: center;
+  width: 17.53px;
+  height: 17.07px;
+}
+.p-pagenation__icon--prev {
+  display: block;
+  width: 12.072px;
+  height: 12.072px;
+  border-bottom: solid 1px #707070;
+  border-left: solid 1px #707070;
+  transform: rotate(45deg);
+  position: relative;
+}
+.p-pagenation__icon--next {
+  display: block;
+  width: 12.072px;
+  height: 12.072px;
+  border-bottom: solid 1px #707070;
+  border-left: solid 1px #707070;
+  transform: rotate(-135deg);
+  position: relative;
+}
+.p-pagenation__icon--prev::before, .p-pagenation__icon--next::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 12.072px;
+  height: 12.072px;
+  border-bottom: solid 1px #707070;
+  border-left: solid 1px #707070;
+}
+.p-pagenation__text--prev {
+  display: flex;
+  margin-left: 8.18px;
+}
+@media screen and (min-width: 768px) {
+  .p-pagenation__text--prev {
+    display: none;
+  }
+}
+.p-pagenation__text--next {
+  display: flex;
+  margin-right: 8.18px;
+}
+@media screen and (min-width: 768px) {
+  .p-pagenation__text--next {
+    display: none;
+  }
+}
+.p-pagenation__text--list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-pagenation__text--list {
+    display: flex;
+  }
+}
+
+.p-pagenationTBPC {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-pagenationTBPC {
+    display: flex;
+    color: #707070;
+    font: 700 1rem/33px "Roboto", Noto Sans JP, MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 30px auto;
+    width: 89.2%;
+  }
+}
+.p-pagenationTBPC__pagenumber {
+  font-weight: 700;
+  padding-right: 1.0738rem;
+}
+.p-pagenationTBPC__list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0 1.2057rem;
+}
+.p-pagenationTBPC__page {
+  border: 1px solid;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+.p-pagenationTBPC__background {
+  color: #FFFFFF;
+  background-color: #3C2A10;
+}
+.p-pagenationTBPC__link {
+  display: block;
+  cursor: pointer;
+}
+.p-pagenationTBPC__link:link {
+  color: #707070;
+  text-decoration: none;
+}
+.p-pagenationTBPC__link:visited {
+  color: #707070;
+  text-decoration: none;
+}
+.p-pagenationTBPC__link:hover {
+  color: #707070;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #707070;
+          text-decoration-color: #707070;
+}
+.p-pagenationTBPC__link:focus {
+  color: #707070;
+  text-decoration: none;
+}
+.p-pagenationTBPC__link:active {
+  color: #707070;
+  text-decoration: none;
+}
+.p-pagenationTBPC__link--none {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

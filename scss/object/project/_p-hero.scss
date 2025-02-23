@@ -16,7 +16,7 @@
         aspect-ratio: 1553 /530;
         }
     &__blackScreen{
-        background-color: rgba($color: #000000, $alpha: 0.2855);
+        background-color: rgba($color: #000000, $alpha: 0.5);
         height: 100%;
         display: flex;
         align-items:center;
@@ -24,16 +24,19 @@
         z-index:20
     }
     &__menu{
-        background-image: url(../../picture/three-burgers-on-brown-wooden-tray-between-white-ceramic-takeout-hero2.jpg);
+        background-image: url(../../picture/three-burgers-zoom.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: 270%;
+        background-position: 14.27% 46.8%;
         width: 100%;
         aspect-ratio: 375/285;
         position: relative;
         z-index: 10;
             @include g.tab{
             aspect-ratio: 834/285;
+            background-size: 120%;
+            background-position: calc(50% - 0%) calc(50% - 3.5%);
+            width: 100%;
             }
             @include g.pc{
             aspect-ratio: 1553 /530;
@@ -48,6 +51,7 @@
             @include g.tab{
                 font-size: 4.32vw;
                 padding-left: 10.3%;
+                width: 301px;
             }
             @include g.pc{
                 font-size: 2.08vw;
@@ -57,10 +61,19 @@
     &__title--menu{
         line-height: 2.637rem;//42.19px
         font: g.$bold 2.25rem g.$fontR;
+        margin-bottom: 12px;
+        @include g.tab{
+            font-size: 3.75rem;
+            margin: 0%;
+            
+        }
     }
     &__title--menucontent{
         font-size: 1rem;
         line-height: 1.485rem;//23.76px
+        @include g.tab{
+            padding-left: 19px;
+        }
 
     }
     
