@@ -43,7 +43,7 @@
                 right: 0%;
                 top: 0%;
                 transform: unset;
-                z-index: -1;
+                z-index: 1;
             }
             &.open{
                 right:0%;
@@ -83,27 +83,6 @@
     &__menu__item{
         line-height: 1.85625rem;//29.7px
         margin-top: 1.25rem;//20px
-        cursor: pointer;
-        &:link{
-            color: g.$color-gray;
-            text-decoration: none;
-        }
-        &:visited{
-            color: g.$color-gray;
-            text-decoration: none;
-        }
-        &:hover{
-            color: g.$color-brown;
-            text-decoration: none;
-            
-        }
-        &:focus{
-            color: g.$color-gray;
-            text-decoration: none;
-        }
-        &:active{
-            color: g.$color-gray;
-            text-decoration: none;
-        } 
+
     }
 }

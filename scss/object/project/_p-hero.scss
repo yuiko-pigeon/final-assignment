@@ -39,7 +39,10 @@
             width: 100%;
             }
             @include g.pc{
-            aspect-ratio: 1553 /530;
+            background-image: url(../../picture/threeburgers.jpeg);
+            aspect-ratio: 1553 /239;
+            background-size: 105%;
+            background-position: 10% 48%;
             }
     }
     &__title--area{
@@ -51,11 +54,14 @@
             @include g.tab{
                 font-size: 4.32vw;
                 padding-left: 10.3%;
-                width: 301px;
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
             }
             @include g.pc{
                 font-size: 2.08vw;
-                padding-left: 5.5%;
+                padding-left: 5.6%;
+                
             }
     }
     &__title--menu{
@@ -65,14 +71,17 @@
         @include g.tab{
             font-size: 3.75rem;
             margin: 0%;
-            
         }
     }
     &__title--menucontent{
         font-size: 1rem;
         line-height: 1.485rem;//23.76px
         @include g.tab{
-            padding-left: 19px;
+            padding-left: 2.2%;
+        }
+        @include g.pc{
+            font-size: 0.83vw;
+            padding-top: 12px;
         }
 
     }

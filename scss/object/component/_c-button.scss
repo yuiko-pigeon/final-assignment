@@ -68,8 +68,11 @@
         margin: 0 auto 43.65px auto;
         @include g.tab{
             width: 43.14%;
-            margin: 0;
-            
+            margin: 0;  
+        }
+        @include g.pc{
+            height: 4.75rem;
+            width: 37.6%;
         }
     }
     &__text{

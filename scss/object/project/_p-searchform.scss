@@ -57,6 +57,7 @@
         border-radius: 0.625rem;
         width: 28.3%;
         border: solid 0.0625rem g.$color-gray;
+        cursor:pointer;
             @include g.tab{
             width:24.90%;   
             }

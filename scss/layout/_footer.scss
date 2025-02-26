@@ -3,6 +3,8 @@
 .l-footer{
     height: 9.375rem;
     width: 100%;
+    position: relative;
+    z-index:2;
     &__inner{
         display: block;
         height: 9.375rem;;
