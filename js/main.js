@@ -53,15 +53,14 @@
         }
         else {
         }
-    });*/
+    });
 
 //検索窓に検索ワードを残す
 const urlParams = new URLSearchParams(window.location.search);
-  
   // 「q」という名前のパラメータの値を取得
-  const searchWord = urlParams.get('q');
-  
+  const searchWord = urlParams.get('q'); 
   // 検索ワードが存在すれば、検索窓にセットする
   if (searchWord) {
     document.getElementById('js-search').value = searchWord;
   }
+*/

@@ -876,7 +876,7 @@ input, select {
   margin-top: 0.25rem;
   padding: 0;
 }
-.p-card__article--arcive {
+.p-card__figure--arcive {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -887,14 +887,14 @@ input, select {
   margin: auto;
 }
 @media screen and (min-width: 768px) {
-  .p-card__article--arcive {
+  .p-card__figure--arcive {
     flex-direction: column;
     width: 90.4%;
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  .p-card__article--arcive {
+  .p-card__figure--arcive {
     width: 87.12%;
   }
 }
