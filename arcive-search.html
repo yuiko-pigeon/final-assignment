@@ -1,227 +1,240 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <title>Hamberger</title>
-</head>
-<body>
-    <div class="l-wrapper" id="js-wrapper">
-        <header class="l-header">
-            <button type="button" class="l-header__title__small" id="js-hamburger">Menu</button>
-            <div class="l-header__article">
-                <h1 class="l-header__title">Hamburger</h1>
-                <form class="p-searchform" action="./arcive-search.html" method="get" name="search-form">
-                    <div class="p-searchform__box">
-                        <input  class="p-searchform__input" id="js-search" name="q" type="search"  placeholder="サイト内検索">
-                    </div>
-                        <input class="p-searchform__button" type="submit" value="検索">
-                </form>
-            </div>
-        </header>
-        <aside class="l-sidebar">
-          <div class="l-sidebar__background"></div>
-            <nav class="l-sidebar__nav">
-                <div class="l-sidebar__inline">
-                    <div class="c-button__close__area" id="js-close">
-                        <div class="c-button__close"></div>
-                    </div>
-                    <p class="l-sidebar__title"><span class="c-menu">Menu</span></p>
-                    <ul class="l-sidebar__menu">
-                        <li><a class="l-sidebar__title--small">バーガー</a>
-                            <ul class="l-sidebar__menu__list">
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ハンバーガー</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">チーズバーガー</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">テリヤキバーガー</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">アボカドバーガー</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">フィッシュバーガー</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ベーコンバーガー</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">チキンバーガー</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="l-sidebar__title--small">サイド</a>
-                            <ul class="l-sidebar__menu__list">
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ポテト</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">サラダ</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ナゲット</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">コーン</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="l-sidebar__title--small">ドリンク</a>
-                            <ul class="l-sidebar__menu__list">
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">コーラ</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ファンタ</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">オレンジ</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">アップル</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">紅茶(Ice/Hot)</a></li>
-                                <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">コーヒー(Ice/Hot)</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-          
-        </aside> 
-        <main class="l-main l-main__font">
-            
-            <div class="p-hero__menu">
-                <div class="p-hero__blackScreen">
-                <p class="p-hero__title--area">
-                    <span class="p-hero__title--menu">Search:</span>
-                    <span class="p-hero__title--menucontent">チーズバーガー</span>
-                </p>
-            </div>
-            </div>
-            <section class="p-article__area">
-            <h2 class="c-title__arcive">小見出しが入ります</h2>
-            <article class="c-article">
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-            </article>
-            </section>
-            <article class="p-article p-article__cardList">
-                <section class="p-card__section--arcive">
-                    <div class="p-card__arcive">
-                        <div class="p-card__image--window"></div>
-                        <section class="p-card__textarea">
-                            <h3 class="p-card__title--arcive">見出しが入ります</h3>
-                            <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
-                            <p class="p-card__text--arcive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            <div class="p-card__button--area">   
-                                <button type="button" onclick="location.href='#'" class="c-button__transmit"><a class="c-button__text">詳しく見る</a></button>
-                            </div>
-                            </section>
-                    </div>
-                </section>
-                <section class="p-card__section--arcive">
-                    <div class="p-card__arcive">
-                        <div class="p-card__image--window"></div>
-                        <section class="p-card__textarea">
-                            <h3 class="p-card__title--arcive">見出しが入ります</h3>
-                            <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
-                            <p class="p-card__text--arcive">
-                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            <div class="p-card__button--area">   
-                                <button type="button" onclick="location.href='#'" class="c-button__transmit"><a class="c-button__text">詳しく見る</a></button>
-                            </div>
-                            </section>
-                    </div>
-                </section>
-                <section class="p-card__section--arcive">
-                    <div class="p-card__arcive">
-                        <div class="p-card__image--window"></div>
-                        <section class="p-card__textarea">
-                            <h3 class="p-card__title--arcive">見出しが入ります</h3>
-                            <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
-                            <p class="p-card__text--arcive">
-                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            <div class="p-card__button--area">   
-                                <button type="button" onclick="location.href='#'" class="c-button__transmit"><a class="c-button__text">詳しく見る</a></button>
-                            </div>
-                            </section>
-                    </div>
-                </section><section class="p-card__section--arcive">
-                    <div class="p-card__arcive">
-                        <div class="p-card__image--window"></div>
-                        <section class="p-card__textarea">
-                            <h3 class="p-card__title--arcive">見出しが入ります</h3>
-                            <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
-                            <p class="p-card__text--arcive">
-                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            <div class="p-card__button--area">   
-                                <button type="button" onclick="location.href='#'" class="c-button__transmit"><a class="c-button__text">詳しく見る</a></button>
-                            </div>
-                            </section>
-                    </div>
-                </section>
-                <section class="p-card__section--arcive">
-                    <div class="p-card__arcive">
-                        <div class="p-card__image--window"></div>
-                        <section class="p-card__textarea">
-                            <h3 class="p-card__title--arcive">見出しが入ります</h3>
-                            <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
-                            <p class="p-card__text--arcive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            <div class="p-card__button--area">   
-                                <button type="button" onclick="location.href='#'" class="c-button__transmit"><a class="c-button__text">詳しく見る</a></button>
-                            </div>
-                            </section>
-                    </div>
-                </section>
-            </article>
-            <nav class="p-pagenation">
-                <div class="p-pagenation__prev">
-                    <a rel="prev" href="" class="c-pagenation__link">
-                        <div class="p-pagenation__icon--area">
-                            <span class="p-pagenation__icon--prev"></span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Hamberger</title>
+    </head>
+    <body>
+        <div class="l-wrapper" id="js-wrapper">
+            <header class="l-header">
+                <button type="button" class="l-header__title__small" id="js-hamburger">Menu</button>
+                <div class="l-header__article">
+                    <h1 class="l-header__title">Hamburger</h1>
+                    <form class="p-searchform" action="./arcive-search.html" method="get" name="search-form">
+                        <div class="p-searchform__box">
+                            <input  class="p-searchform__input" id="js-search" name="q" type="search"  placeholder="チーズバーガー">
                         </div>
-                    </a>
-                    <span class="p-pagenation__text--prev">
-                        <a rel="prev" href="" class="c-pagenation__link">前へ</a>
-                    </span>
-                </div>   
-                <div class="p-pagenation__next">
-                    <span class="p-pagenation__text--next">
-                        <a rel="prev" href="" class="c-pagenation__link">次へ</a>
-                    </span> 
-                    <a rel="next" href="" class="c-pagenation__link">
-                        <div class="p-pagenation__icon--area">
-                            <span class="p-pagenation__icon--next"></span>
-                        </div>
-                    </a>
+                            <input class="p-searchform__button" type="submit" value="検索">
+                    </form>
                 </div>
-            </nav>
-   <!--tab/PC pagenation ここから-->
-            <nav class="p-pagenationTBPC">
-                <div class="p-pagenationTBPC__pagenumber">page 1/10</div>
-                <a rel="prev" href="" class="c-pagenation__link">
+            </header>
+            <aside class="l-sidebar">
+                <div class="l-sidebar__background"></div>
+                <nav class="l-sidebar__nav">
+                    <div class="l-sidebar__inline">
+                        <div class="c-button__close__area" id="js-close">
+                            <div class="c-button__close"></div>
+                        </div>
+                        <p class="l-sidebar__title"><span class="c-menu">Menu</span></p>
+                        <ul class="l-sidebar__menu">
+                            <li><a class="l-sidebar__title--small">バーガー</a>
+                                <ul class="l-sidebar__menu__list">
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ハンバーガー</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">チーズバーガー</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">テリヤキバーガー</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">アボカドバーガー</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">フィッシュバーガー</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ベーコンバーガー</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">チキンバーガー</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="l-sidebar__title--small">サイド</a>
+                                <ul class="l-sidebar__menu__list">
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ポテト</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">サラダ</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ナゲット</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">コーン</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="l-sidebar__title--small">ドリンク</a>
+                                <ul class="l-sidebar__menu__list">
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">コーラ</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">ファンタ</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">オレンジ</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">アップル</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">紅茶(Ice/Hot)</a></li>
+                                    <li class="l-sidebar__menu__item"><a href="" class="c-menuItem__link">コーヒー(Ice/Hot)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside> 
+            <main class="l-main l-main__font">
+                <div class="p-hero__menu">
+                    <div class="p-hero__blackScreen">
+                        <p class="p-hero__title--area">
+                            <span class="p-hero__title--menu">Search:</span>
+                            <span class="p-hero__title--menucontent">チーズバーガー</span>
+                        </p>
+                    </div>
+                </div>
+                <article class="p-article__area">
+                    <h2 class="c-title__arcive">小見出しが入ります</h2>
+                    <article class="c-article">
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </article>
+                </article>
+                <section class="p-article p-article__cardList">
+                    <article class="p-card__article--arcive">
+                        <div class="p-card__arcive">
+                            <div class="p-card__image--window"></div>
+                            <div class="p-card__textarea">
+                                <h3 class="p-card__title--arcive">見出しが入ります</h3>
+                                <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
+                                <p class="p-card__text--arcive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。</p>
+                                <div class="p-card__button--area">   
+                                    <button type="button" onclick="location.href='#'" class="c-button__transmit">
+                                        <a class="c-button__text">詳しく見る</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-card__article--arcive">
+                        <div class="p-card__arcive">
+                            <div class="p-card__image--window"></div>
+                            <div class="p-card__textarea">
+                                <h3 class="p-card__title--arcive">見出しが入ります</h3>
+                                <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
+                                <p class="p-card__text--arcive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。</p>
+                                <div class="p-card__button--area">   
+                                    <button type="button" onclick="location.href='#'" class="c-button__transmit">
+                                        <a class="c-button__text">詳しく見る</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-card__article--arcive">
+                        <div class="p-card__arcive">
+                            <div class="p-card__image--window"></div>
+                            <div class="p-card__textarea">
+                                <h3 class="p-card__title--arcive">見出しが入ります</h3>
+                                <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
+                                <p class="p-card__text--arcive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。</p>
+                                <div class="p-card__button--area">   
+                                    <button type="button" onclick="location.href='#'" class="c-button__transmit">
+                                        <a class="c-button__text">詳しく見る</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-card__article--arcive">
+                        <div class="p-card__arcive">
+                            <div class="p-card__image--window"></div>
+                            <div class="p-card__textarea">
+                                <h3 class="p-card__title--arcive">見出しが入ります</h3>
+                                <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
+                                <p class="p-card__text--arcive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。</p>
+                                <div class="p-card__button--area">   
+                                    <button type="button" onclick="location.href='#'" class="c-button__transmit">
+                                        <a class="c-button__text">詳しく見る</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-card__article--arcive">
+                        <div class="p-card__arcive">
+                            <div class="p-card__image--window"></div>
+                            <div class="p-card__textarea">
+                                <h3 class="p-card__title--arcive">見出しが入ります</h3>
+                                <h4 class="p-card__title--arcive--small">小見出しが入ります</h4>
+                                <p class="p-card__text--arcive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                                テキストが入ります。</p>
+                                <div class="p-card__button--area">   
+                                    <button type="button" onclick="location.href='#'" class="c-button__transmit">
+                                        <a class="c-button__text">詳しく見る</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <nav class="p-pagenation">
                     <div class="p-pagenation__prev">
-                        <div class="p-pagenation__icon--area">
-                            <span class="p-pagenation__icon--prev"></span>
+                        <a rel="prev" href="" class="c-pagenation__link">
+                            <div class="p-pagenation__icon--area">
+                                <span class="p-pagenation__icon--prev"></span>
+                            </div>
+                        </a>
+                        <span class="p-pagenation__text--prev">
+                            <a rel="prev" href="" class="c-pagenation__link">前へ</a>
+                        </span>
+                    </div>   
+                    <div class="p-pagenation__next">
+                        <span class="p-pagenation__text--next">
+                            <a rel="prev" href="" class="c-pagenation__link">次へ</a>
+                        </span> 
+                        <a rel="next" href="" class="c-pagenation__link">
+                            <div class="p-pagenation__icon--area">
+                                <span class="p-pagenation__icon--next"></span>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+    <!--TB/PC pagenation ここから-->
+                <nav class="p-pagenationTBPC">
+                    <div class="p-pagenationTBPC__pagenumber">page 1/10</div>
+                    <a rel="prev" href="" class="c-pagenation__link">
+                        <div class="p-pagenation__prev">
+                            <div class="p-pagenation__icon--area">
+                                <span class="p-pagenation__icon--prev"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="p-pagenationTBPC__list"> 
+                        <li class="p-pagenationTBPC__page p-pagenationTBPC__background">1</li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">2</a></li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">3</a></li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">4</a></li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">5</a></li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">6</a></li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">7</a></li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">8</a></li>
+                        <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">9</a></li>
+                    </ul>
+                    <a rel="next" href="" class="c-pagenation__link">
+                        <div class="p-pagenation__next"> 
+                            <div class="p-pagenation__icon--area">
+                                <span class="p-pagenation__icon--next"></span>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+    <!--TB/PC pagenation ここまで-->
+            </main>
+            <footer class="l-footer">
+                <div class="l-footer__inner">
+                    <div class="p-footer__color">
+                        <div class="p-footer__image">   
+                            <article class="l-footer__textarea"> 
+                                <section class="p-footer__text l-footer__text">
+                                    <a>ショップ情報</a><a>｜</a><a>ヒストリー</a>
+                                </section>
+                                <section class="p-footer__text--small l-footer__text--small">
+                                    <a>CopyRight: RaiseTech</a>
+                                </section>
+                            </article>
                         </div>
                     </div>
-                </a>
-                <ul class="p-pagenationTBPC__list"> 
-                    <li class="p-pagenationTBPC__page p-pagenationTBPC__background">1</li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">2</a></li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">3</a></li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">4</a></li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">5</a></li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">6</a></li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">7</a></li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">8</a></li>
-                    <li class="p-pagenationTBPC__page"><a href="" class="c-pagenation__link">9</a></li>
-                </ul>
-                <a rel="next" href="" class="c-pagenation__link">
-                    <div class="p-pagenation__next"> 
-                        <div class="p-pagenation__icon--area">
-                            <span class="p-pagenation__icon--next"></span>
-                        </div>
-                    </div>
-                </a>
-            </nav>
-<!--tab/PC pagenation ここまで-->
-        </main>
-        <footer class="l-footer">
-            <div class="l-footer__inner">
-                <div class="p-footer__color">
-                    <div class="p-footer__image">   
-                        <article class="l-footer__textarea"> 
-                            <section class="p-footer__text l-footer__text">
-                                <a>ショップ情報</a><a>｜</a><a>ヒストリー</a>
-                            </section>
-                            <section class="p-footer__text--small l-footer__text--small">
-                                
-                                
-                                <a>CopyRight: RaiseTech</a>
-                            </section>
-                        </article>
-                    </div>
-                </div>
-            </div>  
-        </footer>
-    </div>
-<script src="./js/main.js" defer></script>
-</body>
+                </div>  
+            </footer>
+        </div>
+        <script src="./js/main.js" defer></script>
+    </body>
 </html>
