@@ -21,6 +21,9 @@
 @use "object/component/c-menu";
 @use "object/component/c-pagenation";
 @use "object/component/c-menuItem";
+@use "object/component/c-hero";
+@use "object/component/c-image";
+
 
 
 //project
@@ -33,6 +36,7 @@
 @use "object/project/p-menu";
 @use "object/project/p-pagenation";
 @use "object/project/p-pagenationTBPC";
+@use "object/project/p-singlehero";
 
 //utility
 

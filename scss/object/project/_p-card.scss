@@ -185,35 +185,17 @@
     }
     &__arcive{
         display: grid;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: 230.53px 1fr;
         flex-direction: column;
         position: relative;
         min-height: auto;
             @include g.tab{  
+                grid-template-rows: none;
                 grid-template-columns: 50% 50%;
                 align-items: stretch;
                 /*flex-direction: row;*/
-                
             }
         }
-    &__image--window{
-        background-image: url(../../picture/window.png);
-        background-repeat: no-repeat;
-        background-size: 123%;
-        background-position: -30px -17px;
-        width:100%;
-        aspect-ratio: 336.11/230.53;
-        @include g.tab{
-            aspect-ratio: 378.28/354.5;
-            background-size: 168%;
-        background-position: 38% 70%;
-        }
-        @include g.pc{
-            background-image: url(../../picture/window-zoom.jpg);
-            aspect-ratio: 677/471;
-            background-size: cover;
-        }
-    }
     &__textarea{
         background-color: g.$color-brown;
         color: g.$color-white;
@@ -267,6 +249,7 @@
         font-size: 1rem;
         line-height: 23.76px;
         width: 90.48%;
+        height: -webkit-fill-available;
         margin: 0 auto 40px auto;
         @include g.tab{
             font-weight: 400;
@@ -293,4 +276,22 @@
             margin-bottom: 11.54%;
         }
     }
+    /*&__image--window{
+        background-repeat: no-repeat;
+        background-size: 123%;
+        background-position: -30px -17px;
+        width:100%;
+        aspect-ratio: 336.11/230.53;
+        @include g.tab{
+            aspect-ratio: 378.28/354.5;
+            background-size: 168%;
+        background-position: 38% 70%;
+        }
+        @include g.pc{
+            background-image: url(../../picture/window-zoom.jpg);
+            aspect-ratio: 677/471;
+            background-size: cover;
+        }
+    }
+    */
 }

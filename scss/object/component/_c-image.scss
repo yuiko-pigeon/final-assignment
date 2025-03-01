@@ -1,0 +1,57 @@
+@use "../../foundation/global/index" as g;
+
+.c-image{
+    &__threeBurgers--sp{
+        height: 100%;
+        @include g.tab{
+            display: none;
+        }
+    }
+    &__threeBurgers--tb{
+        display: none;
+        @include g.tab{
+            height: 100%;
+            display: block;
+        }
+        @include g.pc{
+            display: none;
+        }
+    }
+    &__threeBurgers--pc{
+        display: none;
+        @include g.pc{
+            display: block;
+            height: 100%;
+        }
+    }
+    &__window--sp{
+        object-fit: cover;
+        height: -webkit-fill-available;
+        aspect-ratio: 336.11/230.53;
+        width: 100%;
+        @include g.tab{
+            display: none;
+        }
+    }
+    &__window--tb{
+        display: none;
+        @include g.tab{
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 378.28/354.5;
+            width: 100%;
+        }
+        @include g.pc{
+            display: none;
+        }
+    }
+    &__window--pc{
+        display: none;
+        @include g.pc{
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 677/471;
+            width: 100%;
+        }
+    }
+}

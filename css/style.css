@@ -389,6 +389,10 @@ input, select {
     line-height: 3.34rem;
   }
 }
+.c-title__hero--single {
+  color: #FFFFFF;
+  font-size: 36px;
+}
 
 .c-button {
   display: block;
@@ -490,7 +494,18 @@ input, select {
 }
 @media screen and (min-width: 768px) {
   .c-article {
-    line: height 1.485rem;
+    line-height: 1.485rem;
+  }
+}
+.c-article__text--black {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.485rem;
+}
+@media screen and (min-width: 1200px) {
+  .c-article__text--black {
+    line-height: 2.0625rem;
   }
 }
 
@@ -632,6 +647,79 @@ input, select {
   text-decoration: none;
 }
 
+.c-image__threeBurgers--sp {
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .c-image__threeBurgers--sp {
+    display: none;
+  }
+}
+.c-image__threeBurgers--tb {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .c-image__threeBurgers--tb {
+    height: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .c-image__threeBurgers--tb {
+    display: none;
+  }
+}
+.c-image__threeBurgers--pc {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .c-image__threeBurgers--pc {
+    display: block;
+    height: 100%;
+  }
+}
+.c-image__window--sp {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: -webkit-fill-available;
+  aspect-ratio: 336.11/230.53;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .c-image__window--sp {
+    display: none;
+  }
+}
+.c-image__window--tb {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .c-image__window--tb {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 378.28/354.5;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .c-image__window--tb {
+    display: none;
+  }
+}
+.c-image__window--pc {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .c-image__window--pc {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 677/471;
+    width: 100%;
+  }
+}
+
 .p-article {
   display: flex;
   flex-direction: column;
@@ -697,6 +785,24 @@ input, select {
   width: 90.4%;
   padding-top: 10rem;
   /*arcive*/
+  /*&__image--window{
+      background-repeat: no-repeat;
+      background-size: 123%;
+      background-position: -30px -17px;
+      width:100%;
+      aspect-ratio: 336.11/230.53;
+      @include g.tab{
+          aspect-ratio: 378.28/354.5;
+          background-size: 168%;
+      background-position: 38% 70%;
+      }
+      @include g.pc{
+          background-image: url(../../picture/window-zoom.jpg);
+          aspect-ratio: 677/471;
+          background-size: cover;
+      }
+  }
+  */
 }
 @media screen and (min-width: 768px) {
   .p-card {
@@ -900,38 +1006,17 @@ input, select {
 }
 .p-card__arcive {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 230.53px 1fr;
   flex-direction: column;
   position: relative;
   min-height: auto;
 }
 @media screen and (min-width: 768px) {
   .p-card__arcive {
+    grid-template-rows: none;
     grid-template-columns: 50% 50%;
     align-items: stretch;
     /*flex-direction: row;*/
-  }
-}
-.p-card__image--window {
-  background-image: url(../../picture/window.png);
-  background-repeat: no-repeat;
-  background-size: 123%;
-  background-position: -30px -17px;
-  width: 100%;
-  aspect-ratio: 336.11/230.53;
-}
-@media screen and (min-width: 768px) {
-  .p-card__image--window {
-    aspect-ratio: 378.28/354.5;
-    background-size: 168%;
-    background-position: 38% 70%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .p-card__image--window {
-    background-image: url(../../picture/window-zoom.jpg);
-    aspect-ratio: 677/471;
-    background-size: cover;
   }
 }
 .p-card__textarea {
@@ -995,6 +1080,7 @@ input, select {
   font-size: 1rem;
   line-height: 23.76px;
   width: 90.48%;
+  height: -webkit-fill-available;
   margin: 0 auto 40px auto;
 }
 @media screen and (min-width: 768px) {
@@ -1103,6 +1189,17 @@ input, select {
     width: 24.9%;
   }
 }
+.p-searchform__text {
+  position: absolute;
+  left: 3rem;
+  top: 0.7rem;
+}
+@media screen and (min-width: 1200px) {
+  .p-searchform__text {
+    left: 3rem;
+    top: 0.4rem;
+  }
+}
 
 .p-hero {
   display: flex;
@@ -1113,6 +1210,28 @@ input, select {
   background-position: center;
   width: 100%;
   aspect-ratio: 375/285;
+  /*&__menu{
+      background-image: url(../../picture/three-burgers-zoom.jpg);
+      background-repeat: no-repeat;
+      background-size: 270%;
+      background-position: 14.27% 46.8%;
+      width: 100%;
+      aspect-ratio: 375/285;
+      position: relative;
+      z-index: 10;
+          @include g.tab{
+          aspect-ratio: 834/285;
+          background-size: 120%;
+          background-position: calc(50% - 0%) calc(50% - 3.5%);
+          width: 100%;
+          }
+          @include g.pc{
+          background-image: url(../../picture/threeburgers.jpeg);
+          aspect-ratio: 1553 /239;
+          background-size: 105%;
+          background-position: 10% 48%;
+          }
+  }*/
 }
 @media screen and (min-width: 768px) {
   .p-hero {
@@ -1127,35 +1246,28 @@ input, select {
 .p-hero__blackScreen {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 20;
 }
-.p-hero__menu {
-  background-image: url(../../picture/three-burgers-zoom.jpg);
-  background-repeat: no-repeat;
-  background-size: 270%;
-  background-position: 14.27% 46.8%;
-  width: 100%;
-  aspect-ratio: 375/285;
+.p-hero__imageArea {
   position: relative;
+  overflow: hidden;
   z-index: 10;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 375/285;
 }
 @media screen and (min-width: 768px) {
-  .p-hero__menu {
+  .p-hero__imageArea {
     aspect-ratio: 834/285;
-    background-size: 120%;
-    background-position: 50% 46.5%;
-    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .p-hero__menu {
-    background-image: url(../../picture/threeburgers.jpeg);
+  .p-hero__imageArea {
     aspect-ratio: 1553/239;
-    background-size: 105%;
-    background-position: 10% 48%;
   }
 }
 .p-hero__title--area {
@@ -1204,6 +1316,37 @@ input, select {
   .p-hero__title--menucontent {
     font-size: 0.83vw;
     padding-top: 12px;
+  }
+}
+.p-hero__single {
+  background-image: url(../../picture/ham-burger-with-vegetables-1639557.jpg);
+  aspect-ratio: 375/225;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .p-hero__single {
+    background-image: url(../../picture/ham-burger-with-vegetables-TB.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-hero__single {
+    background-image: url(../../picture/ham-burger-with-vegetables-PC.jpg);
+  }
+}
+.p-hero__title--singleArea {
+  display: flex;
+  align-items: center;
+  padding-left: 6.7%;
+}
+@media screen and (min-width: 768px) {
+  .p-hero__title--singleArea {
+    padding-left: 10.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-hero__title--singleArea {
+    padding-left: 5.5%;
   }
 }
 
