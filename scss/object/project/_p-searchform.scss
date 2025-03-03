@@ -47,8 +47,18 @@
         width: 100%;
         padding-left: 3rem;
         border: solid 0.0625rem g.$color-gray;
+        color: g.$color-black;
+        font-family: g.$fontMp;
+        line-height: 1.4850rem;
+        font-weight: g.$bold;
+        font-size: 1rem;
             @include g.tab{
                 border-radius: 10px;
+            }
+            @include g.pc{    
+                line-height: 2.0625rem;//33px
+                font-family: g.$fontMm;
+                color: g.$color-gray;
             }
     }    
     &__button{

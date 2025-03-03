@@ -1170,10 +1170,22 @@ input, select {
   width: 100%;
   padding-left: 3rem;
   border: solid 0.0625rem #707070;
+  color: #000000;
+  font-family: "M PLUS 1p", Noto Sans JP, MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+  line-height: 1.485rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-searchform__input {
     border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-searchform__input {
+    line-height: 2.0625rem;
+    font-family: "Mplus 1m", Noto Sans JP, MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+    color: #707070;
   }
 }
 .p-searchform__button {
