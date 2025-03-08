@@ -1,0 +1,20 @@
+@use "../../foundation/global/index" as g;
+
+.c-table{
+    &__border{
+    border: 1px solid g.$color-gray;
+    }
+    &__left{
+        width:41.79%;
+        height:77px;
+        @include g.tab{
+            width: 30.02%;
+        }
+        @include g.pc{
+            width: 31.7%;
+        }
+    }
+    &__vertical--center{
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,15 @@
+@use "../../foundation/global/index" as g;
+
+.p-block{
+    &__area{
+        background-color: g.$color-middleGray;
+        display: block;
+    }
+    &__area--small{
+        width: 67.76%;
+        color: g.$color-brown;
+        padding:50px 0 50px 50px;
+        
+    }
+
+}

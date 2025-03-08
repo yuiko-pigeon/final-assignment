@@ -54,4 +54,41 @@
             width: 100%;
         }
     }
+    &__food--upper{
+        display: flex;
+        width: 89.3%;
+        aspect-ratio: 335/124;
+        margin:0 auto;
+    }
+    &__food--card{
+        display: flex;
+        width:42.7%;
+        height: 50.6%;
+    }
+    &__food--middleSp{
+        display: block;
+        width: 16.7rem;
+        aspect-ratio: 267/166;
+        @include g.tab{
+            display: none;
+        }
+    }
+    &__food--middleTbPc{
+        display: none;
+        @include g.tab{
+            display: block;
+            width: 36.3rem;
+            aspect-ratio: 581/358;
+        }
+    }
+    &__food--grid{
+        width:100%;
+        aspect-ratio: 335/205;
+        @include g.tab{
+            aspect-ratio:349/205;
+        }
+        @include g.pc{
+            aspect-ratio: 438/257;
+        }
+    }
 }

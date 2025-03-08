@@ -1,0 +1,25 @@
+@use "../../foundation/global/index" as g;
+
+.c-liststyle{
+    color: g.$color-gray;
+    font-weight: g.$Mbold;
+    font-size: 1rem;
+    &__margin{
+        margin-left: 11.47%;//43px
+        @include g.tab{
+            margin-left: 18%;//150px
+        }
+    }
+    &__margin--large{
+        margin-left: 16.27%;//61px
+        @include g.tab{
+            margin-left: 20.14%;//168px
+        }
+    }
+    &__margin--minus{
+            margin-left: -20px;
+        }
+    &__none{
+        list-style: none;
+    }
+}

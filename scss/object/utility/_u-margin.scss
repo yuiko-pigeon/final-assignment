@@ -1,0 +1,43 @@
+@use "../../foundation/global/index" as g;
+
+.u-margin{
+    &__center{
+        margin: 0 auto;
+    }
+    &__table{
+        margin: 3.75rem auto;
+    }
+    &__left{
+        margin-left: 5.3%;
+        @include g.tab{
+            margin-left: 7.19%;
+        }
+        @include g.pc{
+            margin-left: 6.44%;
+        }
+    }
+    &__middle--bottom{
+        margin-bottom: 1.875rem;
+        @include g.tab{
+            margin-bottom: 15.06rem;//241px
+        }
+        @include g.pc{
+            margin-bottom: 3.75rem;
+        }
+    }
+    &__middle--top{
+        margin-top: 1.875rem;
+        @include g.tab{
+            margin-top: 3.8125rem;
+        }
+        @include g.pc{
+            margin-top: 3.75rem;
+        }
+    }
+    &__bottom{
+        margin-bottom: 1.875rem;
+        @include g.tab{
+            margin-bottom: 3.75rem;
+        }
+    }
+}   

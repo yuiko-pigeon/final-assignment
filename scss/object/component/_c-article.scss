@@ -2,11 +2,12 @@
 
 .c-article{
     color: g.$color-brown;
-    line-height:1.5rem;//24px
     font-size: 1rem;
-    font-weight: g.$Mbold;
-    @include g.tab{
-        line-height: 1.485rem;//23.76px
+    &__lineheight{
+        line-height:1.5rem;//24px
+        @include g.tab{
+            line-height: 1.485rem;//23.76px
+        }
     }
     &__text--black{
         color: g.$color-black;
@@ -16,5 +17,9 @@
         @include g.pc{
             line-height: 2.0625rem;//33px
         }
+    }
+    &__text--verticalCenter{
+        display: flex;
+        align-items: center;
     }
 }

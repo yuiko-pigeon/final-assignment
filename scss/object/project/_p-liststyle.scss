@@ -1,0 +1,31 @@
+@use "../../foundation/global/index" as g;
+
+.p-liststyle{
+    &__padding{
+        padding-top: 1.0625rem;
+    }
+    &__margin{
+        margin-top:2.0625rem;
+        margin-bottom:1.5rem;
+        @include g.tab{
+            margin-top: 3.9375rem;
+            margin-bottom:1.5rem;    
+        }
+        @include g.pc{
+            margin-top: 3.375rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__margin--bottomLarge{
+        margin-top: 2.0625rem;
+        margin-bottom: 1.625rem;
+        @include g.tab{
+            margin-top: 2.0625rem;
+            margin-bottom: 3.5rem;
+        }
+        @include g.pc{
+            margin-top: 2.0625rem;
+            margin-bottom: 3.5rem;
+        }
+    }
+}

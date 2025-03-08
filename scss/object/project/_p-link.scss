@@ -1,0 +1,39 @@
+@use "../../foundation/global/index" as g;
+
+.p-link{
+    &__bottom{
+        cursor: pointer;
+        &:link{
+            color: g.$color-brown;
+            text-decoration: none;
+        }
+        &:visited{
+            color: g.$color-brown;
+            text-decoration: none;
+        }
+        &:hover{
+            color: g.$color-brown;
+            text-decoration: underline;
+            text-decoration-color: g.$color-brown;
+        }
+        &:focus{
+            color: g.$color-brown;
+            text-decoration: none;
+        }
+        &:active{
+            color: g.$color-brown;
+            text-decoration: none;
+        } 
+    }
+    &__bottomArea{
+        margin-top: 60px;
+        margin-bottom: 69px;
+        @include g.tab{
+            margin-top: 61px;
+            margin-bottom: 149px;
+        }
+        @include g.pc{
+            margin-bottom: 274px;
+        }
+    }
+}

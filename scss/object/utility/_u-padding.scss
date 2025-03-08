@@ -1,0 +1,16 @@
+@use "../../foundation/global/index" as g;
+
+.u-padding{
+    &__tableLeft{
+        padding-left: 30px;
+    }
+    &__tableLeft--spSmall{
+        padding-left: 23.43px;
+        @include g.tab{
+            padding-left: 30px;
+        }
+    }
+    &__left{
+        padding: 20px;
+    }
+}

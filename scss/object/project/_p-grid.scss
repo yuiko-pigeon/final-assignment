@@ -1,0 +1,24 @@
+@use "../../foundation/global/index" as g;
+
+.p-grid{
+    &__single{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 89.3%;
+        gap: 20px;
+        @include g.tab{
+        display: grid; 
+        width: 86.32%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        }
+        @include g.pc{
+            width: 88.16%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@use "../../foundation/global/index" as g;
+
+.c-card{
+    display: flex;
+    &__column{
+    display: flex;
+    flex-direction: column;    
+    }
+    &__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    
+}

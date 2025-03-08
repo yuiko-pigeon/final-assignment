@@ -81,5 +81,14 @@
         text-align: center;
         line-height: 1.0625rem;
     }
-
+    &__bottom{
+        cursor: pointer;
+        max-width: 26.81rem;//429px
+        max-height: 6.5rem;//104px
+        width: 89.3%;
+        aspect-ratio: 335 / 81;
+        border-radius: 1.25rem;
+        border: 1px solid g.$color-gray;
+        background:linear-gradient(g.$color-lightBeige,g.$color-darkBeige);
+    }
 }

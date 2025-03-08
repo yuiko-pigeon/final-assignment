@@ -23,6 +23,8 @@
 @use "object/component/c-menuItem";
 @use "object/component/c-hero";
 @use "object/component/c-image";
+@use "object/component/c-liststyle";
+@use "object/component/c-table";
 
 
 
@@ -37,6 +39,16 @@
 @use "object/project/p-pagenation";
 @use "object/project/p-pagenationTBPC";
 @use "object/project/p-singlehero";
+@use "object/project/p-grid";
+@use "object/project/p-liststyle";
+@use "object/project/p-block";
+@use "object/project/p-link";
 
 //utility
+@use "object/utility/u-margin";
+@use "object/utility/u-width";
+@use "object/utility/u-lineheight";
+@use "object/utility/u-padding";
+@use "object/utility/u-weight";
+@use "object/utility/u-gap";
 

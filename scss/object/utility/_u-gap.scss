@@ -1,0 +1,13 @@
+@use "../../foundation/global/index" as g;
+
+.u-gap{
+    &__card{
+        gap:1.875rem;//30px
+        @include g.tab{
+            gap:7.31rem;//117px
+        }
+        @include g.pc{
+            gap:3.75rem;//60px
+        }
+    }
+}

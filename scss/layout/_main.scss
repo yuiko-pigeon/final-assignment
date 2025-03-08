@@ -9,4 +9,11 @@
     font-family: g.$fontMp;
     font-weight: g.$bold;//700
     }
+    &__center{
+        margin: 0 auto;
+    }
+
+    &__width{
+        width:89.3%;
+    }
 }

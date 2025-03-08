@@ -1,0 +1,10 @@
+@use "../../foundation/global/index" as g;
+
+.u-weight{
+    &__mediumBold{
+        font-weight: g.$Mbold;
+    }
+    &__bold{
+        font-weight: g.$bold;
+    }
+}
