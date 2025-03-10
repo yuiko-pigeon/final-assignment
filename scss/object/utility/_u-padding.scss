@@ -2,15 +2,30 @@
 
 .u-padding{
     &__tableLeft{
-        padding-left: 30px;
+        padding-left: 1.875rem;//30px
     }
     &__tableLeft--spSmall{
-        padding-left: 23.43px;
+        padding-left: 1.464rem;//23.43px
         @include g.tab{
-            padding-left: 30px;
+            padding-left: 1.875rem;
         }
     }
     &__left{
-        padding: 20px;
+        padding: 1.25rem;//20px
+    }
+    &__quote--bottom{
+        padding-bottom: 1.875rem;
+        @include g.tab{
+            padding-bottom: 3.5625rem;//57px
+        }
+        @include g.pc{
+            padding-bottom: 2.9375rem;//47px
+        }
+    }
+    &__quote--top{
+        padding-top: 1.875rem;
+        @include g.tab{
+            padding-top: 3.125rem;//50px
+        }
     }
 }

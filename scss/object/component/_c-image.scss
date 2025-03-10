@@ -91,4 +91,27 @@
             aspect-ratio: 438/257;
         }
     }
+    &__hero--sp{
+        width: 100%;
+        @include g.tab{
+            display: none;
+        }
+    }
+    &__hero--tb{
+        display: none;
+        @include g.tab{
+            width: 100%;
+            display: block;
+        }
+        @include g.pc{
+            display: none;
+        }
+    }
+    &__hero--pc{
+        display: none;
+        @include g.pc{
+            display: block;
+            width: 100%;
+        }
+    }
 }

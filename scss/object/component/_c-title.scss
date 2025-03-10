@@ -22,6 +22,7 @@
         font-weight: g.$bold;
         line-height: 41.58px;
         color: g.$color-brown;
+        font-family: g.$fontMm;
         @include g.tab{
             font-size: 2.25rem;//36px
             line-height: 3.34rem;//53.46px
@@ -29,7 +30,18 @@
     }
     &__hero--single{
         color: g.$color-white;
-        font-size: 36px;
+        font-size: 9.6vw;//36px;
+        position: absolute;
+        padding-left: 6.7%;
+        line-height: 3.34rem;//53.46px
+            @include g.tab{
+                padding-left: 10.3%;
+                line-height: 5.57rem;//89.1px
+                font-size: 3.75rem;//60px
+            }
+            @include g.pc{
+                padding-left: 5.5%;
+            }
     }
 }
     

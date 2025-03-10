@@ -1,0 +1,12 @@
+@use "../../foundation/global/index" as g;
+
+.c-quote{
+    &__link{
+        cursor: pointer;
+        font-style: normal;
+    }
+    &__font{
+        font-family: g.$fontMm;
+        font-size: 1rem;
+    }
+}

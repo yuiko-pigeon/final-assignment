@@ -5,14 +5,13 @@
         @include g.tab{
             display: flex;
             color: g.$color-gray; 
-            font:g.$bold 1rem/33px g.$fontR;
+            font:g.$bold 1rem/2.0625rem g.$fontR;//1rem/33px
             align-items: center;
             justify-content: center;
-            margin: 100px auto 30px auto;
+            margin: 6.25rem auto 1.875rem auto; //100px 30px
         }
         @include g.pc{
             margin: 9.66% auto 4.12% auto;
-            
         }
         &__pagenumber{
             font-weight: g.$bold;
@@ -20,14 +19,14 @@
         }
         &__list{
             display: flex;
-            gap: 15px;
+            gap: 0.9375rem;
             justify-content: center;
             padding:0 1.2057rem;
         }
         &__page{
-            border: 1px solid;
-            width: 35px;
-            height: 35px;
+            border: 0.0625rem solid; //1px
+            width: 2.1875rem;//35px
+            height: 2.1875rem;
             text-align: center;
         }
         &__background{

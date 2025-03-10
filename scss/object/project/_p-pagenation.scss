@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px auto 30px auto;
+    margin: 6.25rem auto 1.875rem auto;
     width: 89.2%;
     @include g.tab{
         display: none;
@@ -24,24 +24,24 @@
     &__icon--area{
         display: flex;
         align-items: center;
-        width: 17.53px;
-        height: 17.07px;
+        width: 1.095rem;//17.53px
+        height: 1.067rem//17.07px
     }
     &__icon--prev{
         display: block;
-        width: 12.072px;
-        height: 12.072px;
-        border-bottom: solid 1px g.$color-gray;
-        border-left: solid 1px  g.$color-gray;
+        width: 0.7545rem;
+        height: 0.7545rem;
+        border-bottom: solid 0.0625rem g.$color-gray;
+        border-left: solid 0.0625rem  g.$color-gray;
         transform: rotate(45deg);
         position: relative;
     }
     &__icon--next{
         display: block;
-        width: 12.072px;
-        height: 12.072px;
-        border-bottom: solid 1px g.$color-gray;
-        border-left: solid 1px  g.$color-gray;
+        width: 0.7545rem;
+        height: 0.7545rem;
+        border-bottom: solid 0.0625rem g.$color-gray;
+        border-left: solid 0.0625rem  g.$color-gray;
         transform: rotate(-135deg);
         position: relative;
     }
@@ -49,36 +49,27 @@
     &__icon--prev::before,&__icon--next::before{
         content: "";
         position: absolute;
-        top: -7px;
-        right: -7px;
-        width: 12.072px;
-        height: 12.072px;
-        border-bottom: solid 1px g.$color-gray;
-        border-left: solid 1px  g.$color-gray;
+        top: -0.4375rem;//-7px
+        right: -0.4375rem;
+        width: 0.7545rem;//12.072px
+        height: 0.7545rem;
+        border-bottom: solid 0.0625rem g.$color-gray;
+        border-left: solid 0.0625rem  g.$color-gray;
         }
     &__text--prev{
         display: flex;
-        margin-left: 8.18px;
+        margin-left: 0.511rem;//8.18px
         @include g.tab{
             display: none;
         }
     }
     &__text--next{
         display: flex;
-        margin-right: 8.18px;
+        margin-right: 0.511rem;//8.18px
         @include g.tab{
             display: none;
         }
     }
-    /*&icon--next{
-        display: block;
-        width: 12.072px;
-        height: 12.072px;
-        border-top: solid 1px g.$color-gray;
-        border-left: solid 1px  g.$color-gray;
-        transform: rotate(-135deg);
-        position: relative;
-    }*/
     &__text--list{
         display: none;
         @include g.tab{
@@ -86,3 +77,14 @@
         }
     }
 }
+
+/*&icon--next{
+        display: block;
+        width: 0.7545rem;
+        height: 0.7545rem;
+        border-top: solid 0.0625rem g.$color-gray;
+        border-left: solid 0.0625rem  g.$color-gray;
+        transform: rotate(-135deg);
+        position: relative;
+    }*/
+    

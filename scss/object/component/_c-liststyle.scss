@@ -1,7 +1,6 @@
 @use "../../foundation/global/index" as g;
 
 .c-liststyle{
-    color: g.$color-gray;
     font-weight: g.$Mbold;
     font-size: 1rem;
     &__margin{
@@ -17,7 +16,7 @@
         }
     }
     &__margin--minus{
-            margin-left: -20px;
+            margin-left: -1.25rem;//-20px
         }
     &__none{
         list-style: none;

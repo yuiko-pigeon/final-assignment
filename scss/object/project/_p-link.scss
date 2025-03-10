@@ -26,14 +26,38 @@
         } 
     }
     &__bottomArea{
-        margin-top: 60px;
-        margin-bottom: 69px;
+        margin-top: 3.75rem;//60px
+        margin-bottom: 4.31rem;//69px
         @include g.tab{
-            margin-top: 61px;
-            margin-bottom: 149px;
+            margin-top: 3.81rem;//61px
+            margin-bottom: 9.31rem;//149px
         }
         @include g.pc{
-            margin-bottom: 274px;
+            margin-bottom: 17.125rem;//274px
         }
+    }
+    &__footer{
+        cursor: pointer;
+        &:link{
+            color: g.$color-white;
+            text-decoration: none;
+        }
+        &:visited{
+            color: g.$color-white;
+            text-decoration: none;
+        }
+        &:hover{
+            color: g.$color-white;
+            text-decoration: underline;
+            text-decoration-color: g.$color-white;
+        }
+        &:focus{
+            color: g.$color-white;
+            text-decoration: none;
+        }
+        &:active{
+            color: g.$color-white;
+            text-decoration: none;
+        } 
     }
 }

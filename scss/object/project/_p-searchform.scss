@@ -25,7 +25,7 @@
         height: 2.875rem;//46px
             @include g.tab{
                 width: 72.5%;//396px
-                border-radius: 10px;
+                border-radius: 0.625rem//10px
                 } 
             @include g.pc{
                 width: 73%;
@@ -53,7 +53,7 @@
         font-weight: g.$bold;
         font-size: 1rem;
             @include g.tab{
-                border-radius: 10px;
+                border-radius: 0.625rem;
             }
             @include g.pc{    
                 line-height: 2.0625rem;//33px

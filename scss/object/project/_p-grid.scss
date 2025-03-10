@@ -6,14 +6,14 @@
         flex-direction: column;
         align-items: center;
         width: 89.3%;
-        gap: 20px;
+        gap: 1.25rem;//20px
         @include g.tab{
         display: grid; 
         width: 86.32%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        row-gap: 20px;
-        column-gap: 20px;
+        row-gap: 1.25rem;
+        column-gap: 1.25rem;
         }
         @include g.pc{
             width: 88.16%;

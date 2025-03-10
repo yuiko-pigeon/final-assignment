@@ -8,4 +8,13 @@
     @include g.pc{
         width: 87.12%;//1353px
     }
+    &__tbLarge{
+        width: 89.3%;
+    @include g.tab{
+        width:85.61%;//714px
+    }
+    @include g.pc{
+        width: 87.12%;//1353px
+    }
+    }
 }

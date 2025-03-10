@@ -6,13 +6,12 @@
             width: 80%;
         }
     &__font {
-    font-family: g.$fontMp;
-    font-weight: g.$bold;//700
+        font-family: g.$fontMp;
+        font-weight: g.$bold;//700
+        }
+    &__color{
+        color: g.$color-brown;
     }
-    &__center{
-        margin: 0 auto;
-    }
-
     &__width{
         width:89.3%;
     }

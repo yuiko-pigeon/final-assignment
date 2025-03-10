@@ -34,7 +34,7 @@
         display: flex;
         content: "";
         /*width: 2rem;//32px 2rem*/
-        height: 2px;//36px 2.25rem
+        height: 0.125rem;//2px //36px 2.25rem
         background-color: aqua;
         position:relative;
     }
@@ -88,7 +88,7 @@
         width: 89.3%;
         aspect-ratio: 335 / 81;
         border-radius: 1.25rem;
-        border: 1px solid g.$color-gray;
+        border: 0.0625rem solid g.$color-gray;
         background:linear-gradient(g.$color-lightBeige,g.$color-darkBeige);
     }
 }

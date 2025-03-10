@@ -100,30 +100,12 @@
             padding-top: 12px;
         }
     }
-    &__single{
-        background-image: url(../../picture/ham-burger-with-vegetables-1639557.jpg);
+    /*&__single{
         aspect-ratio: 375/225;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @include g.tab{
-            background-image: url(../../picture/ham-burger-with-vegetables-TB.jpg);
-        }
-        @include g.pc{
-            background-image: url(../../picture/ham-burger-with-vegetables-PC.jpg);
-        }
-    }
-    &__title--singleArea{
+    }*/
+    &__singleArea{
         display: flex;
         align-items: center;
-        padding-left: 6.7%;
-            @include g.tab{
-                
-                padding-left: 10.3%;
-            }
-            @include g.pc{
-                
-                padding-left: 5.5%;
-            }
+        position: relative;
     }
-    
 }

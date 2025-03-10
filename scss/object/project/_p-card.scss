@@ -193,7 +193,6 @@
                 grid-template-rows: none;
                 grid-template-columns: 50% 50%;
                 align-items: stretch;
-                /*flex-direction: row;*/
             }
         }
     &__textarea{
@@ -286,6 +285,7 @@
     &__textareaSingle--bottom{
         width: 54.3%;
     }
+}
     /*&__image--window{
         background-repeat: no-repeat;
         background-size: 123%;
@@ -304,4 +304,3 @@
         }
     }
     */
-}

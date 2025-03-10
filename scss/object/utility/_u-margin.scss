@@ -16,8 +16,17 @@
             margin-left: 6.44%;
         }
     }
+    &__left--topic{
+        margin-left: 5.3%;
+        @include g.tab{
+            margin-left: 7.19%;
+        }
+        @include g.pc{
+            margin-left: 6.44%;
+        }
+    }
     &__middle--bottom{
-        margin-bottom: 1.875rem;
+        margin-bottom: 1.875rem;//30px
         @include g.tab{
             margin-bottom: 15.06rem;//241px
         }
@@ -38,6 +47,30 @@
         margin-bottom: 1.875rem;
         @include g.tab{
             margin-bottom: 3.75rem;
+        }
+    }
+    &__bottom--quote{
+        margin-bottom: 1.875rem;
+        @include g.tab{
+            margin-bottom: 3.8125rem;//61px
+        }
+    }
+    &__bottom--textBlock{
+        margin-bottom: 2.25rem;//36px
+        @include g.tab{
+            margin-bottom: 3.875rem;//62px
+        }
+        @include g.pc{
+            margin-bottom: 3.75rem;//60px
+        }
+    }
+    &__bottom--small{
+        margin-bottom: 1.5625rem;//25px
+        @include g.tab{
+            margin-bottom: 3.4375rem;//55px
+        }
+        @include g.pc{
+            margin-bottom: 3.5625rem;//57px
         }
     }
 }   

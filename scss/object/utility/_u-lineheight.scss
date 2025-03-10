@@ -1,3 +1,20 @@
+@use "../../foundation/global/index" as g;
+
 .u-lineheight{
     line-height: 1.485rem;//23.76px
+    &__large{
+        line-height: 1.856rem;//29.7px
     }
+    &__topic--small{
+        line-height: 2.23rem;//35.64px
+        @include g.tab{
+            line-height: 2.6rem;//41.58px
+        }
+    }
+    &__topic{
+        line-height: 2.6rem;//41.58px
+        @include g.tab{
+            line-height: 3.34rem;//53.46px
+        }
+    }
+}

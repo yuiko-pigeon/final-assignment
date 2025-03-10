@@ -21,12 +21,11 @@
 @use "object/component/c-menu";
 @use "object/component/c-pagenation";
 @use "object/component/c-menuItem";
-@use "object/component/c-hero";
 @use "object/component/c-image";
 @use "object/component/c-liststyle";
 @use "object/component/c-table";
-
-
+@use "object/component/c-topic";
+@use "object/component/c-quote";
 
 //project
 @use "object/project/p-article";
@@ -38,7 +37,6 @@
 @use "object/project/p-menu";
 @use "object/project/p-pagenation";
 @use "object/project/p-pagenationTBPC";
-@use "object/project/p-singlehero";
 @use "object/project/p-grid";
 @use "object/project/p-liststyle";
 @use "object/project/p-block";
