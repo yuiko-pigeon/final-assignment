@@ -1,0 +1,277 @@
+@use "../../foundation/global/index" as g;
+
+.single{
+    //.wp-image-48　よくない
+    .wp-block-gallery .wp-block-image .wp-image-48{
+        display: flex;
+        width: 89.3%;
+        aspect-ratio: 335/124;
+        margin:0 auto;
+        margin-bottom: 1.875rem;
+        @include g.tab{
+            margin-bottom: 3.75rem;
+        }
+    }
+    .wp-block-columns{
+        margin: 0 auto 3.75rem 5.34%;
+        width: 89.9%;
+        line-height: 1.4850rem;
+    }
+    .wp-block-quote{
+        margin: 0 auto;
+        margin-bottom: 1.875rem;
+        width: 89.3%;
+        line-height: 1.485rem;//23.76px
+        background-color: g.$color-middleGray;
+        display: block;
+        @include g.tab{
+            margin-bottom: 3.75rem;
+            width:85.61%;//714px
+        }
+        @include g.pc{
+            width: 87.12%;//1353px
+        }
+    }
+    .wp-block-quote>p{
+        width: 89.25%;
+        padding-top: 1.875rem;
+        margin-bottom: 1.875rem;
+        margin: 0 auto;
+        @include g.tab{
+            margin-bottom: 3.8125rem;//61px
+            padding-top: 3.125rem;//50px
+        }
+    }
+    .wp-block-quote>cite{
+        width: 89.3%;
+        padding-bottom: 1.875rem;
+        font-family: g.$fontMm;
+        line-height: 1.485rem;//23.76px
+        margin: 0 auto;
+        font-style: unset;
+        @include g.tab{
+            padding-bottom: 3.5625rem;//57px
+            width:85.61%;//714px
+        }
+        @include g.pc{
+            padding-bottom: 2.9375rem;//47px
+            width: 87.12%;//1353px
+        }
+    }
+    .first-figure{
+        width: 89.3%;
+        margin: 0 auto;
+        margin-bottom: 1.875rem;
+        @include g.tab{
+            margin-bottom: 3.75rem;
+        }
+    }
+    .wp-block-group .wp-block-image .aligncenter{
+        display: block;
+        width: 16.7rem;
+        aspect-ratio: 267/166;
+        @include g.tab{
+            margin: 0 auto;
+            display: block;
+            width: 36.3rem;
+            aspect-ratio: 581/358;
+        }
+    }
+    .wp-block-gallery.wp-block-gallery-2.is-layout-flex {
+        gap:1.25rem !important;
+        --wp--style--unstable-gallery-gap:1.25rem !important;
+        margin: 0 auto !important;
+        width: 89.3%;
+            @include g.tab{
+                display: grid; 
+                width: 86.32%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                row-gap: 1.25rem;
+                column-gap: 1.25rem;
+                }
+            @include g.pc{
+                width: 88.16%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+        /*figure img{
+            margin-bottom: 1.875rem;
+                @include g.tab{
+                    margin-bottom: 0rem;
+                }
+
+        }*/
+    }
+    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+        width: auto;
+    }
+    .wp-block-table{
+        margin: 3.75rem auto;
+        width: 89.3%;
+            @include g.tab{
+                width:85.49%;//713px
+            }
+            @include g.pc{
+                width: 87.12%;//1353px
+            }
+        & tr td{
+            border: 0.0625rem solid g.$color-gray;
+            padding-top: 0;
+            padding-bottom: 0;
+            &:nth-child(1) {
+            width: 31.7%;
+            padding-left: 1.464rem;//23.43px
+            vertical-align: middle;
+            width:41.79%;
+            height:4.8125rem;//77px
+                @include g.tab{
+                    width: 30.02%;
+                    padding-left: 1.875rem;
+                }
+                @include g.pc{
+                    width: 31.7%;
+                }
+            }
+            &:nth-child(2) {
+            vertical-align: middle;
+            padding-left: 1.875rem;
+            }
+        }
+    }
+    .wp-block-buttons{
+        margin-left: 5.3%;
+        @include g.tab{
+            margin-left: 7.19%;
+        }
+        @include g.pc{
+            margin-left: 6.44%;
+        }
+    }
+    .wp-block-button{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 26.81rem;//429px
+        max-height: 6.5rem;//104px
+        width: 89.3%;
+        aspect-ratio: 335 / 81;
+        border-radius: 1.25rem;
+        border: 0.0625rem solid g.$color-gray;
+        background:linear-gradient(g.$color-lightBeige,g.$color-darkBeige);
+    }
+    .wp-block-button__link{
+        display: flex;
+        color: g.$color-brown;
+        font-weight: g.$bold;
+        font-size: 1rem;
+        font-family: g.$fontMp;
+        background-color: transparent;
+        border-radius: none;
+        border: none;
+        box-shadow: none;
+        text-decoration: none;
+        padding: auto;
+    }
+
+    //カスタムエディタスタイルここから
+    .is-style{
+        &-tb-large{
+            margin-bottom: 1.875rem;//30px
+                @include g.tab{
+                    margin-bottom: 15.06rem;//241px
+                }
+                @include g.pc{
+                    margin-bottom: 3.75rem;
+                }
+        }
+        &-margin-listtop{
+            margin-top:1rem;
+                @include g.tab{
+                    margin-top: 2.875rem;
+                }
+                @include g.pc{
+                    margin-top: 3.3125rem;
+                }
+        }
+        &-margin-listbottom{
+            margin-bottom: 1.625rem;
+                @include g.tab{
+                    margin-bottom: 3.5rem;
+                }
+                @include g.pc{
+                    margin-bottom: 3.5rem;
+                }
+        }
+        &-list-1{
+            //margin-top:2.0625rem;
+            //margin-bottom:1.5rem;
+            line-height: 1.485rem;
+            margin-left: 11.47%;//43px
+            padding-top: 1.0625rem;
+                @include g.tab{
+                    margin-left: 18%;//150px
+                    //margin-top: 3.9375rem;
+                    //margin-bottom:1.5rem;    
+                }
+                @include g.pc{
+                    // margin-top: 3.375rem;
+                    //margin-bottom: 1.5rem;
+                }
+            &>li ul{
+                list-style: auto;
+            }
+            &>li>ul{
+                margin-left: 4.8%;
+                padding-top: 1.0625rem;
+                @include g.tab{
+                    margin-left: 2.14%;
+                }
+            }
+        }
+        &-list-2{
+            line-height: 1.485rem;
+            margin-left: calc(11.47% - 1.25rem);//43px
+            padding-top: 1.0625rem;
+            list-style: none;
+            //margin-bottom: 1.625rem;
+                @include g.tab{
+                    margin-left:calc(18% - 1.25rem);
+                    //margin-bottom: 3.5rem;
+                }
+                @include g.pc{
+                    //margin-bottom: 3.5rem;
+                }
+            &>li ul{
+                list-style: none;
+            }
+            &>li>ul{
+                margin-left: 4.8%;
+                padding-top: 1.0625rem;
+                @include g.tab{
+                    margin-left: 2.14%;
+                }
+            }
+        }
+        &-group-gray{
+            background-color: g.$color-middleGray;
+            display: block;
+            margin: 0 auto;
+            width: 89.3%;
+            @include g.tab{
+                width:85.49%;//713px
+            }
+            @include g.pc{
+                width: 87.12%;//1353px
+            }
+        }
+        &-tag-1{
+            font-family: g.$fontMp;
+            width: 67.76%;
+            line-height: 1.485rem;
+            color: #3C2A10;
+            padding: 3.125rem 0 3.125rem 3.125rem;
+        }
+    }
+}
