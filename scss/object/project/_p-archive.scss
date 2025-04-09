@@ -1,0 +1,14 @@
+@use "../../foundation/global/index" as g;
+
+.archive{
+    .attachment-post-thumbnail{
+    display: none;
+        @include g.pc{
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 677/471;
+            width: 100%;
+            height:auto
+        }
+    }
+}

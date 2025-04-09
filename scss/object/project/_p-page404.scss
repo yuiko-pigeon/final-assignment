@@ -1,8 +1,44 @@
 @use "../../foundation/global/index" as g;
 
-.page404{
-    .l-main{
-        margin: 0 auto;
+.p-page404{
+    &__title--area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
+    &__text--area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include g.tab{
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__text--sp{
+        display: contents;
+        @include g.tab{
+            display: none;
+        }
+    }
+    &__br--tb{
+        display: none;
+        @include g.tab{
+            display: block;
+        }
+    }
+    &__link--bottom{
+        display: contents;
+        @include g.tab{
+            display: flex;
+        }
+    }
+    &__margin--bottom{
+        margin-bottom: 2.875rem;
+        @include g.tab{
+            margin-bottom: 6.875rem;
+        }
+        
+    }
 }

@@ -22,6 +22,29 @@
         
     });
     
+    /*// 高さを合わせる
+    function matchHeights() {
+      const main = document.querySelector('.l-main');
+      const sidebar = document.querySelector('.l-sidebar__nav');
+      if (!main || !sidebar) return;
+    
+      // PCサイズのときだけ実行
+      if (window.innerWidth >= 1200) {
+        main.style.minHeight = '';
+        sidebar.style.minHeight = '';
+    
+        const maxHeight = Math.max(main.offsetHeight, sidebar.offsetHeight);
+        main.style.minHeight = `${maxHeight}px`;
+        sidebar.style.minHeight = `${maxHeight}px`;
+      } else {
+        // SPやTBでは高さをリセット
+        main.style.minHeight = '';
+        sidebar.style.minHeight = '';
+      }
+    }
+window.addEventListener('load', matchHeights);
+window.addEventListener('resize', matchHeights);*/
+  
 /*
     //黒背景１回目クリックで出現。その後さらに２回クリックで消えるハンバーガーメニューのコード。（メニューを×で消す時、l-wrapperもクリックしてしまっているのでここで１回とカウント）
 

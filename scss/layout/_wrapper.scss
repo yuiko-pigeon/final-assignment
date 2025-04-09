@@ -1,7 +1,7 @@
 @use "../foundation/global/index" as g;
 
 .l-wrapper{
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: auto;
@@ -11,5 +11,12 @@
    &.fix{
     overflow: hidden;
     max-height: 100vh;
+   }
+   &__mainAndSidebar{
+     @include g.pc{
+        display: flex;
+        flex: 1;
+        width: 100%;
+     }
    }
 }

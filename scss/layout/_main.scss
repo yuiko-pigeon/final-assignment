@@ -1,7 +1,7 @@
 @use "../foundation/global/index" as g;
 
 .l-main{
-    flex-grow: 1;
+    flex: 1;
         @include g.pc{
             width: 80%;
         }
