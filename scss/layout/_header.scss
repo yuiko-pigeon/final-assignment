@@ -12,7 +12,9 @@
             position: relative;
         }
         @include g.pc{
-            width: 80%;
+            grid-row:1/2;
+            grid-column:1/2;
+            width: 100%;
             justify-content: unset;
             position: unset;
         }
@@ -46,6 +48,30 @@
                 font-size: 4.0rem;//64px
                 line-height: 4.6875rem;//75px
                 }
+        >a{
+            cursor: pointer;
+            &:link{
+                color: g.$color-gray;
+                text-decoration: none;
+            }
+            &:visited{
+                color: g.$color-gray;
+                text-decoration: none;
+            }
+            &:hover{
+                color: g.$color-gray;
+                text-decoration: none;
+                text-decoration-color: g.$color-gray;
+            }
+            &:focus{
+                color: g.$color-gray;
+                text-decoration: none;
+            }
+            &:active{
+                color: g.$color-gray;
+                text-decoration: none;
+            } 
+        }
     }
     &__title__small{
         display: block;

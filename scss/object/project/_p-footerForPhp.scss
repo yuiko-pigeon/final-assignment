@@ -1,7 +1,7 @@
-@use "../../foundation/global/index" as g;
+    @use "../../foundation/global/index" as g;
 
 
-.p-footer{
+.p-footerForPhp{
     &__text{
         display: block;
         font-family: g.$fontMp;
@@ -30,7 +30,7 @@
     }
     &__image{
         display: block;
-        background-image: url(../../picture/texture-layer.png);
+        background-image: url(./image/texture-layer.png);
         background-repeat: repeat-x;
         background-size: cover;
         height: 150px;//%に?

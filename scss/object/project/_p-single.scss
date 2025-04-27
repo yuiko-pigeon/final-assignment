@@ -1,6 +1,55 @@
 @use "../../foundation/global/index" as g;
 
 .single{
+    .l-wrapper{
+        display: grid;
+        position: relative;
+        overflow: hidden;
+        min-height: 100dvh;
+        grid-template-columns: 1fr;
+        grid-template-rows:13.4375rem 1fr 9.375rem;
+        @include g.tab{
+            grid-template-rows:13.5625rem 1fr 9.375rem;
+            }
+        @include g.pc{
+            display: grid;
+            grid-template-columns:80% 20%;
+            min-height: 100dvh;
+            }
+        &.fix{
+            overflow: hidden;
+            }
+        }
+    .wp-block-cover{
+        aspect-ratio: 375/225;
+        min-height: auto;
+        @include g.tab{
+            aspect-ratio: 834/505;
+        }
+        @include g.pc{
+            aspect-ratio: 1553/500;
+        }
+        &__inner-container{
+            display: flex;
+            align-items: center;
+            position: relative;
+            >h1{
+                color: g.$color-white;
+                font-size: 9.6vw;//36px;
+                position: absolute;
+                padding-left: 6.7%;
+                line-height: 3.34rem;//53.46px
+                    @include g.tab{
+                        padding-left: 10.3%;
+                        line-height: 5.57rem;//89.1px
+                        font-size: 3.75rem;//60px
+                    }
+                    @include g.pc{
+                        padding-left: 5.5%;
+                    }
+            }
+        }
+    }
     .wp-block-media-text{
         margin: 0 auto 0 5.34%;
         width: 89.9%;
@@ -163,7 +212,7 @@
             padding: 0 5% 0 0;
             }
         }
-        &-image-upper>img{
+        &-img-upper>img{
             display: flex;
             width: 89.3%;
             aspect-ratio: 335/124;

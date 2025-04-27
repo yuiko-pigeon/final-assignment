@@ -1,0 +1,70 @@
+@use "../../foundation/global/index" as g;
+.home{
+    .p-hero{
+        display: flex;
+        align-items:center;
+        background-image: url(./image/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        aspect-ratio: 375/285;
+            @include g.tab{
+            aspect-ratio: 834/285;
+            }
+            @include g.pc{
+            aspect-ratio: 1553 /530;
+            }
+    }
+    .p-card{
+        &__background--threeBurgers{
+            display: grid;
+            grid-template-rows: 1fr auto;
+            flex-direction: column;
+            position: relative;
+            align-items:end;
+            justify-content: flex-end;
+            background-image: url(./image/three-burgers-on-brown-wooden-tray-between-white-ceramic-takeout-hero2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:89.3%;
+            aspect-ratio: 335/642;
+            min-height: auto;
+                @include g.tab{  
+                    aspect-ratio: 616 / 1197; 
+                    margin-top: 15.5%;
+                    margin-bottom: 16.7%;
+                    margin-left: 15.5%;
+                    width: 79.8%;
+                }
+        }
+        &__background--bigPotato{
+            display: grid;
+            grid-template-rows: 1fr auto;
+            flex-direction: column;
+            position: relative;
+            align-items:end;
+            justify-content: flex-end;
+            background-image: url(./image/humberger-potato-eatin.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            aspect-ratio: 336 / 642;
+            min-height: auto;
+            width:89.6%;
+                @include g.tab{
+                    margin-top: 15.5%;
+                    margin-bottom: 16.7%;
+                    margin-right: 15.5%;
+                    width: 79.8%;
+                    aspect-ratio: 616 / 1197;
+                }
+        }
+    }
+    .p-map{
+        &__image{
+            background-image: url(./image/map-image.jpg);
+            background-size: cover;
+            height: auto;
+        }
+    }
+}      

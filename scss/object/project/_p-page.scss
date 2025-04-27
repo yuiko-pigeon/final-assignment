@@ -1,6 +1,25 @@
 @use "../../foundation/global/index" as g;
 
 .page{
+    .l-wrapper{
+        display: grid;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:13.4375rem 1fr 9.375rem;
+        @include g.tab{
+            grid-template-rows:13.5625rem 1fr 9.375rem;
+            }
+        @include g.pc{
+            display: grid;
+            grid-template-columns:80% 20%;
+            min-height: 100vh;
+            }
+        &.fix{
+            overflow: hidden;
+            }
+        }
     .wp-block-media-text{
         margin: 0 auto 0 5.34%;
         width: 89.9%;

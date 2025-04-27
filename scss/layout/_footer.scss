@@ -5,6 +5,12 @@
     width: 100%;
     position: relative;
     z-index:2;
+    @include g.pc{
+        width: 100%;
+        position: unset;
+        grid-row:3/4;
+        grid-column:1/3;
+    }
     &__inner{
         display: block;
         height: 9.375rem;;

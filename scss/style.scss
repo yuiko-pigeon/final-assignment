@@ -32,6 +32,7 @@
 @use "object/project/p-card";
 @use "object/project/p-searchform";
 @use "object/project/p-hero";
+@use "object/project/p-home";
 @use "object/project/p-map";
 @use "object/project/p-footer";
 @use "object/project/p-menu";
@@ -45,6 +46,12 @@
 @use "object/project/p-page";
 @use "object/project/p-archive";
 @use "object/project/p-page404";
+@use "object/project/p-history";
+@use "object/project/p-search";
+@use "object/project/p-searchformForPhp";
+@use "object/project/p-footerForPhp";
+@use "object/project/p-frontPage";
+
 //utility
 @use "object/utility/u-margin";
 @use "object/utility/u-width";

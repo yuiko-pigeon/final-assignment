@@ -1,0 +1,105 @@
+@use "../../foundation/global/index" as g;
+
+.page-template-history{
+    .l-wrapper{
+        display: grid;
+        //flex-direction: column;
+        //justify-content: center;
+        //width: auto;
+        //box-sizing: border-box; //box-sizing:inherit は、親要素のbox-sizingを継承する
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:13.4375rem 1fr 9.375rem;
+        @include g.tab{
+            grid-template-rows:13.5625rem 1fr 9.375rem;
+            }
+        @include g.pc{
+            display: grid;
+            grid-template-columns:80% 20%;
+            min-height: 100vh;
+            }
+        &.fix{
+            overflow: hidden;
+            //max-height: 100vh;
+            }
+        }
+    .p-article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*width: 335px;*/
+        margin-left:auto;
+        margin-right: auto;
+        /*flex-wrap: wrap;*/
+        align-items: stretch;
+        gap:1.25rem;
+        @include g.tab{
+            display:grid;
+            margin-top: 2rem;
+            grid-template-columns:1fr 1fr 1fr;
+            flex-direction: row;
+            justify-content: center;
+            gap:3rem;
+        }
+    }
+    .title{
+        display: flex;
+        background-color: g.$color-brown;
+        color:g.$color-white;
+        font-size: 1.2rem;
+        letter-spacing: 0.13rem;
+        font-weight: g.$Mbold;
+        height: 8rem;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2.5rem;
+        @include g.tab{
+            padding-left:  8.99%;
+        }
+        @include g.pc{
+            padding-left: 9.31%;
+            padding-bottom: 8.86%;
+    }
+    .p-card__textarea{
+        background-color: g.$color-middleGray;
+        color: g.$color-brown;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+        height: 10rem;
+        @include g.tab{
+            flex-direction: row;
+            justify-content: center;
+        }
+        >a{
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            cursor: pointer;
+            &:link{
+                color: g.$color-brown;
+                text-decoration: none;
+            }
+            &:visited{
+                color: g.$color-brown;
+                text-decoration: none;
+            }
+            &:hover{
+                color: g.$color-brown;
+                text-decoration: underline;
+                text-decoration-color: g.$color-brown;
+            }
+            &:focus{
+                color: g.$color-brown;
+                text-decoration: none;
+            }
+            &:active{
+                color: g.$color-brown;
+                text-decoration: none;
+            } 
+        }
+    }
+}
+}

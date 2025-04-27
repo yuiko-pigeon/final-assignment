@@ -1,0 +1,455 @@
+@use "../../foundation/global/index" as g;
+
+.page-id-974{
+    .l-wrapper{
+        display: grid;
+        position: relative;
+        overflow: hidden;
+        min-height: 100dvh;
+        grid-template-columns: 1fr;
+        grid-template-rows:13.4375rem 1fr 9.375rem;
+        @include g.tab{
+            grid-template-rows:13.5625rem 1fr 9.375rem;
+            }
+        @include g.pc{
+            display: grid;
+            grid-template-columns:80% 20%;
+            min-height: 100dvh;
+            }
+        &.fix{
+            overflow: hidden;
+            }
+        }
+    .is-style-hero{
+        display: flex;
+        align-items:center;
+        background-image: url(./image/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        aspect-ratio: 375/285;
+        padding: 0%;
+        min-height: auto;
+        @include g.tab{
+            aspect-ratio: 834/285;
+        }
+        @include g.pc{
+            aspect-ratio: 1553 /530;
+        }
+        &__blackScreen{
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            position: absolute;
+            z-index:20
+        }
+    .wp-block-cover__inner-container{
+        display: flex;
+        align-items: center;
+        padding-left: 6.7%;
+        font-size: 9.6vw;
+        color: g.$color-white;
+        @include g.tab{
+            font-size: 4.32vw;
+            padding-left: 10.3%;
+        }
+        @include g.pc{
+            font-size: 2.08vw;
+            padding-left: 5.5%;
+        }
+    }
+}
+    .wp-block-columns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left:auto;
+        margin-right: auto;
+        align-items: stretch !important;
+        gap:1.25rem;
+        width: 100%;
+        @include g.pc{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            gap:0rem;
+        }
+        @include g.tab{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        //左のカード
+        .is-style-card-left{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 5.3%;
+            @include g.tab{
+                display: flex;
+                width: 50%;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-top: 0%;
+            } 
+            .is-light{
+                display: grid;
+                grid-template-columns: 1fr auto;
+                flex-direction: column;
+                position: relative;
+                align-items:end;
+                justify-content: flex-end;
+                width:89.3%;
+                padding: 0;
+                aspect-ratio: 335/642;
+                min-height: auto;
+                @include g.tab{  
+                    aspect-ratio: 616 / 1197; 
+                    margin-top: 15.5%;
+                    margin-bottom: 16.7%;
+                    margin-left: 15.5%;
+                    width: 79.8%;
+                }
+                >.wp-block-cover__inner-container{
+                    padding-left: 0;
+                    justify-content: center;
+                }
+            }
+            h2{
+                display:inline-block;
+                font: g.$bold 10.9vw g.$fontR;//41px
+                color: g.$color-lightGray;
+                position: absolute;
+                top: 0.8125rem;//13px
+                left: 4.48%;
+                line-height: 12.8vw;
+                @include g.tab{
+                    top: 0.8750rem;//14px
+                    left: 3.09%;
+                    font-size: 5.28vw;
+                    line-height: 6.18vw;
+                }
+                @include g.pc{
+                    top: 1.5rem;//24px
+                    left: 1.63%;
+                    font-size: 4.2vw;
+                    line-height: 4.9vw;
+                }
+                >span{
+                    display: inline-block;
+                    position: relative;
+                    margin-bottom: 1.2088rem;
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        bottom: -1.2088rem;
+                        background-color: g.$color-white;
+                        height: 0.25rem;
+                        width: 9.05vw;
+                          @include g.tab{
+                              width:4.31vw;
+                          }
+                          @include g.pc{
+                              width: 3.29vw;
+                          } 
+                    }
+                    >a{
+                        cursor: pointer;
+                        &:link{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        }
+                        &:visited{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        }
+                        &:hover{
+                            color: g.$color-white;
+                            text-decoration-color: none;
+                            transform: scale(1.05);
+                            display: inline-block; // transformを使う時は block系必須
+                        }
+                        &:focus{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        }
+                        &:active{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        } 
+                    }
+                }  
+            }  
+        }
+        //右のカード
+        .is-style-card-right{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 13.07%;
+            @include g.tab{
+                display: flex;
+                width: 50%;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-bottom: 0%;
+            }
+            .wp-block-cover{
+                display: grid;
+                grid-template-columns: 1fr auto;
+                flex-direction: column;
+                position: relative;
+                align-items:end;
+                justify-content: flex-end;
+                aspect-ratio: 336 / 642;
+                min-height: auto;
+                width:89.6%;
+                padding: 0;
+                @include g.tab{
+                    margin-top: 15.5%;
+                    margin-bottom: 16.7%;
+                    margin-right: 15.5%;
+                    width: 79.8%;
+                    aspect-ratio: 616 / 1197;
+                }
+                >.wp-block-cover__inner-container{
+                    padding-left: 0;
+                    justify-content: center;
+                }
+            } 
+            
+            h2{
+                color: g.$color-white;
+                display: flex;
+                font-size: 10.9vw;
+                position: absolute;
+                top: 0.8125rem;//13px
+                left: 3.87%;
+                line-height: 12.8vw;
+                @include g.tab{
+                    top:1rem;
+                    font-size: 5.28vw;
+                    line-height: 6.18vw;
+                }
+                @include g.pc{
+                    top: 1.75rem;//28px
+                    left: 3.41%;
+                    font-size: 4.2vw;
+                    line-height: 4.9vw;
+                }
+                >span{
+                    display: inline-block;
+                    position: relative;
+                    margin-bottom: 1.3338rem;
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        bottom: -1.3338rem;
+                        background-color: g.$color-white;
+                        height: 0.25rem;
+                        width: 9.05vw;
+                          @include g.tab{
+                              width:4.31vw;
+                          }
+                          @include g.pc{
+                              width: 3.29vw;
+                          } 
+                    }
+                    >a{
+                        cursor: pointer;
+                        &:link{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        }
+                        &:visited{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        }
+                        &:hover{
+                            color: g.$color-white;
+                            text-decoration-color: none;
+                            transform: scale(1.05);
+                            display: inline-block; // transformを使う時は block系必須
+                        }
+                        &:focus{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        }
+                        &:active{
+                            color: g.$color-white;
+                            text-decoration: none;
+                        } 
+                    }
+                }  
+            }
+        }
+        img{
+            object-fit: cover;
+        }
+        .wp-block-group{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            justify-self: center;
+            width: 100%;
+            padding-top: 10rem;
+            @include g.tab{
+                padding-top: 12.5rem;
+            }
+            @include g.pc{
+                width:95%;
+            }
+            >div
+                >.wp-block-group
+                    {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+                    height: auto;
+                    padding: 2.7%;
+                    position: relative;
+                    margin-bottom: 4.2%;
+                    width: 90.3%;
+                    @include g.tab{
+                        width: 91%;
+                        margin-bottom: 4.5%;
+                    }
+                    @include g.pc{
+                        width:95%;
+                        margin-bottom: 2.6%;
+                    }
+                    h3{
+                        display: flex;
+                        font-size:1.375rem;//22px
+                        color:g.$color-brown;
+                        margin-bottom: 0.25rem;
+                    }
+                    p{
+                        line-height: 1.485rem;//23.76px
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: g.$color-brown;
+                        font-weight: g.$Mbold;//400
+                        font-size: 1rem; //16px
+                        height: auto;//% とりあえず
+                        width: 100%;
+                        margin-top: 0.25rem;
+                        padding: 0;
+                    }
+            }
+        }
+    }//wp-block-columns閉じ
+    .is-style{
+        &-map{
+            padding: 0;
+            display: block;
+            width: 100vw;
+                    @include g.tab{
+                        height: auto;
+                    }  
+                    @include g.pc{
+                        width: 100%;
+                    }
+            >span{//.p-map-color
+                    opacity: .2855 !important;
+                    height: 100%;
+                }
+            >img{//.p-map-image
+                object-fit: cover;
+                height: 100%;
+            }        
+        }
+        &-map-ray{
+            padding: 0;
+            .is-style-map-ray{
+                @include g.pc{
+                    width: 61.1%;
+                }
+            }
+            >span{
+                bottom: 0;
+                left: 0;
+                opacity: .3116;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 1;
+                height: 60%;
+                @include g.tab{
+                    height: 100%;
+                }
+            }
+        }
+        &-map-textarea{
+            padding: 11.2% 10.7% 15.2%;
+            @include g.tab{
+                padding: 5.03% 3.48% 4.8% 5.04%;
+                }
+            @include g.pc{
+                padding: 9.05% 14.10% 7.895% 12.53%;
+                }
+            p{
+                display: block;
+                color: g.$color-white;
+                font-size: 0.875rem;    //14px
+                line-height: 2.0625rem; //33px
+                margin-top: 0.9375rem;
+                @include g.pc{
+                    font-size: 1rem;    //16px
+                    line-height: 2.0625rem; //33px
+                }
+            }
+        }
+        &-map-heading{
+            display: inline-block;
+            font-size: 1.88rem;//30px
+            color: g.$color-white;
+            line-height: 2.7843rem;
+            @include g.pc{
+                font-size: 2.25rem;//36px
+                line-height: 3.34125rem;//53.46px
+            }
+            >span{
+                display: inline-block;
+                position: relative;
+                margin-bottom: 0.9375rem;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.9375rem;
+                    background-color: g.$color-white;
+                    height: 0.125rem;
+                    width: 4.6875rem;
+                }
+            }
+        }
+    }//.is-style閉じ
+
+ }
+    
+    /*.p-map{
+        p{
+            display: block;
+            color: g.$color-white;
+            font-size: 0.875rem;    //14px
+            line-height: 2.0625rem; //33px
+            margin-top: 0.9375rem;
+                @include g.pc{
+                    font-size: 1rem;    //16px
+                    line-height: 2.0625rem; //33px
+                }
+        }
+    }*/

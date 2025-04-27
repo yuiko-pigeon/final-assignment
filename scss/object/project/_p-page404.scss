@@ -1,44 +1,68 @@
 @use "../../foundation/global/index" as g;
-
-.p-page404{
-    &__title--area{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    &__text--area{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        @include g.tab{
-            align-items: center;
-            text-align: center;
+.error404{
+    .l-wrapper{
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    min-height: 100dvh;
+    grid-template-columns: 1fr;
+    grid-template-rows:13.4375rem 1fr 9.375rem;
+    @include g.tab{
+        grid-template-rows:13.5625rem 1fr 9.375rem;
+        }
+    @include g.pc{
+        display: grid;
+        grid-template-columns:80% 20%;
+        min-height: 100dvh;
+        }
+    &.fix{
+        overflow: hidden;
+        //max-height: 100vh;
         }
     }
-    &__text--sp{
-        display: contents;
-        @include g.tab{
-            display: none;
-        }
+    .p-hero__title--menu{
+        text-transform: uppercase;
     }
-    &__br--tb{
-        display: none;
-        @include g.tab{
-            display: block;
-        }
-    }
-    &__link--bottom{
-        display: contents;
-        @include g.tab{
+    .p-page404{
+        &__title--area{
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-    }
-    &__margin--bottom{
-        margin-bottom: 2.875rem;
-        @include g.tab{
-            margin-bottom: 6.875rem;
+        &__text--area{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include g.tab{
+                align-items: center;
+                text-align: center;
+            }
         }
-        
+        &__text--sp{
+            display: contents;
+            @include g.tab{
+                display: none;
+            }
+        }
+        &__br--tb{
+            display: none;
+            @include g.tab{
+                display: block;
+            }
+        }
+        &__link--bottom{
+            display: contents;
+            @include g.tab{
+                display: flex;
+            }
+        }
+        &__margin--bottom{
+            margin-bottom: 2.875rem;
+            @include g.tab{
+                margin-bottom: 6.875rem;
+            }
+            
+        }
     }
 }

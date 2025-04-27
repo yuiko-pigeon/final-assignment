@@ -1,11 +1,11 @@
 @use "../../foundation/global/index" as g;
 
-.archive{
+.search-results,.search-no-results{
     .l-wrapper{
         display: grid;
         position: relative;
-        overflow-x: hidden;
-        min-height: 100dvh;
+        overflow: hidden; //overfrow-xだけでは右や左に隠したぶんは隠れるけど、その部分から影響する下へのスクロールが隠れないのでoverflowにする
+        min-height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows:13.4375rem 1fr 9.375rem;
         @include g.tab{
@@ -171,5 +171,21 @@
             color: g.$color-white;
             background-color: g.$color-brown;
         }
-        
+        .p-card__textarea{
+            background-color: g.$color-middleGray;
+            color: g.$color-brown;
+            display: flex;
+            flex-direction: column;
+            min-height: 3rem;
+            height: 10rem;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            @include g.tab{
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
 }
