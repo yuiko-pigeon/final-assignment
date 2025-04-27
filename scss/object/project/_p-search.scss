@@ -1,11 +1,11 @@
 @use "../../foundation/global/index" as g;
 
-.search-results,.search-no-results{
+.search-results{
     .l-wrapper{
         display: grid;
         position: relative;
         overflow: hidden; //overfrow-xだけでは右や左に隠したぶんは隠れるけど、その部分から影響する下へのスクロールが隠れないのでoverflowにする
-        min-height: 100vh;
+        min-height: 100dvh;
         grid-template-columns: 1fr;
         grid-template-rows:13.4375rem 1fr 9.375rem;
         @include g.tab{
@@ -14,7 +14,7 @@
         @include g.pc{
             display: grid;
             grid-template-columns:80% 20%;
-            min-height: 100vh;
+            min-height: 100dvh;
             }
         &.fix{
             overflow: hidden;
@@ -171,21 +171,69 @@
             color: g.$color-white;
             background-color: g.$color-brown;
         }
+        
+}
+.search-no-results{
+    .l-wrapper{
+        display: grid;
+        position: relative;
+        overflow: hidden; //overfrow-xだけでは右や左に隠したぶんは隠れるけど、その部分から影響する下へのスクロールが隠れないのでoverflowにする
+        min-height: 100dvh;
+        grid-template-columns: 1fr;
+        grid-template-rows:13.4375rem 1fr 9.375rem;
+        @include g.tab{
+            grid-template-rows:13.5625rem 1fr 9.375rem;
+            }
+        @include g.pc{
+            display: grid;
+            grid-template-columns:80% 20%;
+            min-height: 100dvh;
+            }
+        &.fix{
+            overflow: hidden;
+            }
+        }
+        .p-article__area{
+            color: g.$color-brown;
+            font-size: 1rem;
+            font-weight: g.$Mbold;
+            line-height:1.5rem;//24px
+            @include g.tab{
+                line-height: 1.485rem;//23.76px
+            }
+            h2{
+                display: block;
+                font-size: 1.75rem;//28px
+                font-weight: g.$bold;
+                line-height: 41.58px;
+                color: g.$color-brown;
+                font-family: g.$fontMm;
+                @include g.tab{
+                    font-size: 2.25rem;//36px
+                    line-height: 3.34rem;//53.46px
+                }
+            }
+        }
         .p-card__textarea{
             background-color: g.$color-middleGray;
             color: g.$color-brown;
             display: flex;
             flex-direction: column;
-            min-height: 3rem;
+            min-height: 2rem;
             height: 10rem;
             justify-content: center;
             align-items: center;
             width: 80%;
-            margin: 0 auto;
+            margin: 0 auto 2rem auto;
             @include g.tab{
                 flex-direction: row;
                 justify-content: center;
             }
         }
-
-}
+        .p-pagenation{
+            display: none;
+        }
+        .p-pagenationTBPC{
+            display: none;
+        }
+    }

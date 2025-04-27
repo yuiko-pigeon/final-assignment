@@ -4,7 +4,7 @@
     .l-wrapper{
         display: grid;
         position: relative;
-        overflow-x: hidden;
+        overflow: hidden;
         min-height: 100dvh;
         grid-template-columns: 1fr;
         grid-template-rows:13.4375rem 1fr 9.375rem;
