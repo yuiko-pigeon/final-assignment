@@ -116,6 +116,7 @@
                 >.wp-block-cover__inner-container{
                     padding-left: 0;
                     justify-content: center;
+                    position: unset;
                 }
             }
             h2{
@@ -220,9 +221,9 @@
                 >.wp-block-cover__inner-container{
                     padding-left: 0;
                     justify-content: center;
+                    position: unset;
                 }
             } 
-            
             h2{
                 color: g.$color-white;
                 display: flex;
@@ -390,6 +391,9 @@
                     height: 100%;
                 }
             }
+            >div{
+                z-index: 1;
+            }
         }
         &-map-textarea{
             padding: 11.2% 10.7% 15.2%;
@@ -403,7 +407,7 @@
                 display: block;
                 color: g.$color-white;
                 font-size: 0.875rem;    //14px
-                line-height: 2.0625rem; //33px
+                line-height: 2.0625rem !important; //33px
                 margin-top: 0.9375rem;
                 @include g.pc{
                     font-size: 1rem;    //16px

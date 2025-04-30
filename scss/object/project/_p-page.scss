@@ -5,7 +5,7 @@
         display: grid;
         position: relative;
         overflow: hidden;
-        min-height: 100vh;
+        min-height: 100dvh;
         grid-template-columns: 1fr;
         grid-template-rows:13.4375rem 1fr 9.375rem;
         @include g.tab{
@@ -14,7 +14,7 @@
         @include g.pc{
             display: grid;
             grid-template-columns:80% 20%;
-            min-height: 100vh;
+            min-height: 100dvh;
             }
         &.fix{
             overflow: hidden;
@@ -155,7 +155,6 @@
         background:linear-gradient(g.$color-lightBeige,g.$color-darkBeige);
     }
     .wp-block-button__link{
-        display: flex;
         color: g.$color-brown;
         font-weight: g.$bold;
         font-size: 1rem;
