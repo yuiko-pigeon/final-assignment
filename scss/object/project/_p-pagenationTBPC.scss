@@ -2,35 +2,35 @@
 
 .p-pagenationTBPC{
     display: none;
-        @include g.tab{
-            display: flex;
-            color: g.$color-gray; 
-            font:g.$bold 1rem/2.0625rem g.$fontR;//1rem/33px
-            align-items: center;
-            justify-content: center;
-            margin: 6.25rem auto 1.875rem auto; //100px 30px
-        }
-        @include g.pc{
-            margin: 9.66% auto 4.12% auto;
-        }
-        &__pagenumber{
-            font-weight: g.$bold;
-            padding-right: 1.0738rem;
-        }
-        &__list{
-            display: flex;
-            gap: 0.9375rem;
-            justify-content: center;
-            padding:0 1.2057rem;
-        }
-        &__page{
-            border: 0.0625rem solid; //1px
-            width: 2.1875rem;//35px
-            height: 2.1875rem;
-            text-align: center;
-        }
-        &__background{
-            color: g.$color-white;
-            background-color: g.$color-brown;
-        }
+    @include g.tab{
+        display: flex;
+        color: g.$color-gray; 
+        font:g.$bold 1rem/2.0625rem g.$fontR;//1rem/33px
+        align-items: center;
+        justify-content: center;
+        margin: 6.25rem auto 1.875rem auto; //100px 30px
+    }
+    @include g.pc{
+        margin: 9.66% auto 4.12% auto;
+    }
+    &__pagenumber{
+        font-weight: g.$bold;
+        padding-right: 1.0738rem;
+    }
+    &__list{
+        display: flex;
+        gap: 0.9375rem;
+        justify-content: center;
+        padding:0 1.2057rem;
+    }
+    &__page{
+        border: 0.0625rem solid; //1px
+        width: 2.1875rem;//35px
+        height: 2.1875rem;
+        text-align: center;
+    }
+    &__background{
+        color: g.$color-white;
+        background-color: g.$color-brown;
+    }
 }

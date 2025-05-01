@@ -45,8 +45,8 @@
         transform: rotate(-135deg);
         position: relative;
     }
-
-    &__icon--prev::before,&__icon--next::before{
+    &__icon--prev::before,
+    &__icon--next::before{
         content: "";
         position: absolute;
         top: -0.4375rem;//-7px

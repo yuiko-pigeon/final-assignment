@@ -1,21 +1,21 @@
 @use "../../foundation/global/index" as g;
 
-.p-searchformForPhp{
+.p-searchform-for-php{
     display: flex;
-    margin:1.75rem 0 2.81rem 0;
+    margin: 1.75rem 0 2.81rem 0;
     justify-content: center;
-    height:2.875rem;//46px
+    height: 2.875rem;//46px
     width: 84.8%;
     justify-content: space-between;
-        @include g.tab{
-            width: 65.5%;//546px
-            }
-        @include g.pc{
-            margin: 0;
-            position: absolute;
-            right:1.987rem;//31.79px
-            width: 35%;
-            }
+    @include g.tab{
+        width: 65.5%;//546px
+        }
+    @include g.pc{
+        margin: 0;
+        position: absolute;
+        right: 1.987rem;//31.79px
+        width: 35%;
+        }
 /*虫眼鏡アイコン設置のため、inputと同じサイズの親要素のボックス用意。*/   
      &__box{
         display: flex;
@@ -23,13 +23,13 @@
         border-radius: 0.625rem 0.5rem 0.625rem 0.625rem;
         width: 67.9%;//216px
         height: 2.875rem;//46px
-            @include g.tab{
-                width: 72.5%;//396px
-                border-radius: 0.625rem//10px
-                } 
-            @include g.pc{
-                width: 73%;
-            }
+        @include g.tab{
+            width: 72.5%;//396px
+            border-radius: 0.625rem//10px
+            } 
+        @include g.pc{
+            width: 73%;
+        }
     }
     &__box::before{
         content: "";
@@ -52,14 +52,14 @@
         line-height: 1.4850rem;
         font-weight: g.$bold;
         font-size: 1rem;
-            @include g.tab{
-                border-radius: 0.625rem;
-            }
-            @include g.pc{    
-                line-height: 2.0625rem;//33px
-                font-family: g.$fontMm;
-                color: g.$color-gray;
-            }
+        @include g.tab{
+            border-radius: 0.625rem;
+        }
+        @include g.pc{    
+            line-height: 2.0625rem;//33px
+            font-family: g.$fontMm;
+            color: g.$color-gray;
+        }
     }    
     &__button{
         display:flex;
@@ -68,9 +68,9 @@
         width: 28.3%;
         border: solid 0.0625rem g.$color-gray;
         cursor:pointer;
-            @include g.tab{
+        @include g.tab{
             width:24.90%;   
-            }
+        }
     }
     &__text{
         position: absolute;

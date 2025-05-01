@@ -20,6 +20,7 @@
             overflow: hidden;
             }
         }
+
     .attachment-post-thumbnail{
         object-fit: cover;
         height: -webkit-fill-available;
@@ -39,6 +40,7 @@
             height:auto
         }
     }
+
     .p-article__area{
         color: g.$color-brown;
         font-size: 1rem;
@@ -60,6 +62,7 @@
             }
         }
     }
+
     .p-article {
         gap:0px;
         margin-bottom: 1.25rem;
@@ -74,6 +77,7 @@
             }
         }
     }
+
     .c-button__text{
         display: block;
         cursor: pointer;
@@ -99,6 +103,7 @@
             text-decoration: none;
         } 
     }
+
     .no-post{
         display: flex;
         background-color: g.$color-brown;
@@ -110,6 +115,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .wp-pagenavi{
         display: none;
         @include g.tab{
@@ -137,7 +143,6 @@
             width: 2.1875rem;//35px
             height: 2.1875rem;
             text-align: center;
-            //background: transparent;
             display: block;
             cursor: pointer;
             &:link{
@@ -173,6 +178,8 @@
         }
         
 }
+
+//検索結果なしの場合の表示
 .search-no-results{
     .l-wrapper{
         display: grid;
@@ -193,6 +200,7 @@
             overflow: hidden;
             }
         }
+
         .p-article__area{
             color: g.$color-brown;
             font-size: 1rem;
@@ -214,6 +222,7 @@
                 }
             }
         }
+
         .p-card__textarea{
             background-color: g.$color-middleGray;
             color: g.$color-brown;
@@ -230,9 +239,11 @@
                 justify-content: center;
             }
         }
+
         .p-pagenation{
             display: none;
         }
+        
         .p-pagenationTBPC{
             display: none;
         }

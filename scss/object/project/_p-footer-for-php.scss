@@ -1,7 +1,7 @@
     @use "../../foundation/global/index" as g;
 
 
-.p-footerForPhp{
+.p-footer-for-php{
     &__text{
         display: block;
         font-family: g.$fontMp;
@@ -37,6 +37,7 @@
         
     }
 }
+
 //WordPress CSS
 .menu-footer-container{
     list-style: none;
@@ -44,19 +45,18 @@
     justify-content: center;
     ul{
         display: flex;
+        height: 1.875rem;//30px
+        align-items: center;
         >li{
             list-style: none;
             &:not(:last-child) .p-link__footer::after{
-                    content:'|';
-                    padding: 0 0.41rem;
-                    display: inline-block; 
-                }
+                content:'|';
+                padding: 0 0.41rem;
+                display: inline-block; 
+            }
         }
     }
 }
-
-
-
 
 /*
 .p-footer{

@@ -20,9 +20,11 @@
         //max-height: 100vh;
         }
     }
+
     .p-hero__title--menu{
         text-transform: uppercase;
     }
+
     .p-page404{
         &__title--area{
             display: flex;
@@ -62,7 +64,6 @@
             @include g.tab{
                 margin-bottom: 6.875rem;
             }
-            
         }
     }
 }

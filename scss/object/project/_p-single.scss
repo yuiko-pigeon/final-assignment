@@ -20,6 +20,7 @@
             overflow: hidden;
             }
         }
+
     .wp-block-cover{
         aspect-ratio: 375/225;
         min-height: auto;
@@ -39,17 +40,18 @@
                 position: absolute;
                 padding-left: 6.7%;
                 line-height: 3.34rem;//53.46px
-                    @include g.tab{
-                        padding-left: 10.3%;
-                        line-height: 5.57rem;//89.1px
-                        font-size: 3.75rem;//60px
-                    }
-                    @include g.pc{
-                        padding-left: 5.5%;
-                    }
+                @include g.tab{
+                    padding-left: 10.3%;
+                    line-height: 5.57rem;//89.1px
+                    font-size: 3.75rem;//60px
+                }
+                @include g.pc{
+                    padding-left: 5.5%;
+                }
             }
         }
     }
+
     .wp-block-media-text{
         margin: 0 auto 0 5.34%;
         width: 89.9%;
@@ -58,11 +60,13 @@
             padding: 0;
         }
     }
+
     .wp-block-columns{
         margin: 0 auto 0 5.34%;
         width: 89.9%;
         line-height: 1.4850rem;
     }
+
     .wp-block-quote{
         margin: 0 auto;
         margin-bottom: 1.875rem;
@@ -78,6 +82,7 @@
             width: 87.12%;//1353px
         }
     }
+
     .wp-block-quote>p{
         width: 89.25%;
         padding-top: 1.875rem;
@@ -87,6 +92,7 @@
             padding-top: 3.125rem;//50px
         }
     }
+
     .wp-block-quote>cite{
         width: 89.3%;
         padding-bottom: 1.875rem;
@@ -103,6 +109,7 @@
             width: 87.12%;//1353px
         }
     }
+
     .first-figure{
         width: 89.3%;
         margin: 0 auto;
@@ -111,7 +118,10 @@
             margin-bottom: 3.75rem;
         }
     }
-    .wp-block-group .wp-block-image .aligncenter{
+
+    .wp-block-group 
+    .wp-block-image 
+    .aligncenter{
         display: block;
         width: 16.7rem;
         aspect-ratio: 267/166;
@@ -126,28 +136,30 @@
             margin: 3.75rem auto 0 auto;
         }
     }
-    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+    .wp-block-gallery.has-nested-images 
+    figure.wp-block-image:not(#individual-image) {
         width: auto;
     }
+
     .wp-block-table{
         margin: 3.75rem auto;
         width: 89.3%;
-            @include g.tab{
-                width:85.49%;//713px
-            }
-            @include g.pc{
-                width: 87.12%;//1353px
-            }
-        & tr td{
+        @include g.tab{
+            width:85.49%;//713px
+        }
+        @include g.pc{
+            width: 87.12%;//1353px
+        }
+        tr td{
             border: 0.0625rem solid g.$color-gray;
             padding-top: 0;
             padding-bottom: 0;
             &:nth-child(1) {
-            width: 31.7%;
-            padding-left: 1.464rem;//23.43px
-            vertical-align: middle;
-            width:41.79%;
-            height:4.8125rem;//77px
+                width: 31.7%;
+                padding-left: 1.464rem;//23.43px
+                vertical-align: middle;
+                width:41.79%;
+                height:4.8125rem;//77px
                 @include g.tab{
                     width: 30.02%;
                     padding-left: 1.875rem;
@@ -157,11 +169,12 @@
                 }
             }
             &:nth-child(2) {
-            vertical-align: middle;
-            padding-left: 1.875rem;
+                vertical-align: middle;
+                padding-left: 1.875rem;
             }
         }
     }
+
     .wp-block-buttons{
         margin-left: 5.3%;
         @include g.tab{
@@ -171,6 +184,7 @@
             margin-left: 6.44%;
         }
     }
+
     .wp-block-button{
         cursor: pointer;
         display: flex;
@@ -184,6 +198,7 @@
         border: 0.0625rem solid g.$color-gray;
         background:linear-gradient(g.$color-lightBeige,g.$color-darkBeige);
     }
+
     .wp-block-button__link{
         color: g.$color-brown;
         font-weight: g.$bold;
@@ -202,13 +217,13 @@
         &-text-right{
             grid-template-columns: 42.7% auto !important;
             p{
-            padding: 0 0 0 5%;
+                padding: 0 0 0 5%;
             }
         }
         &-text-left{
             grid-template-columns: auto 42.7% !important;
             p{
-            padding: 0 5% 0 0;
+                padding: 0 5% 0 0;
             }
         }
         &-img-upper>img{
@@ -217,36 +232,36 @@
             aspect-ratio: 335/124;
             margin:0 auto;
             margin-bottom: 1.875rem;
-                @include g.tab{
-                    margin-bottom: 3.75rem;
-                }
+            @include g.tab{
+                margin-bottom: 3.75rem;
+            }
         }
         &-tb-large{
             margin-bottom: 1.875rem;//30px
-                @include g.tab{
-                    margin-bottom: 15.06rem;//241px
-                }
-                @include g.pc{
-                    margin-bottom: 3.75rem;
-                }
+            @include g.tab{
+                margin-bottom: 15.06rem;//241px
+            }
+            @include g.pc{
+                margin-bottom: 3.75rem;
+            }
         }
         &-margin-listtop{
             margin-top:1rem;
-                @include g.tab{
-                    margin-top: 2.875rem;
-                }
-                @include g.pc{
-                    margin-top: 3.3125rem;
-                }
+            @include g.tab{
+                margin-top: 2.875rem;
+            }
+            @include g.pc{
+                margin-top: 3.3125rem;
+            }
         }
         &-margin-listbottom{
             margin-bottom: 1.625rem;
-                @include g.tab{
-                    margin-bottom: 3.5rem;
-                }
-                @include g.pc{
-                    margin-bottom: 3.5rem;
-                }
+            @include g.tab{
+                margin-bottom: 3.5rem;
+            }
+            @include g.pc{
+                margin-bottom: 3.5rem;
+            }
         }
         &-card-gap{
             height:1.875rem !important;//30px
@@ -258,21 +273,15 @@
             }
             }
         &-list-1{
-            //margin-top:2.0625rem;
-            //margin-bottom:1.5rem;
             line-height: 1.485rem;
             margin-left: 11.47%;//43px
             padding-top: 1.0625rem;
-                @include g.tab{
-                    margin-left: 15%;
-                    //margin-top: 3.9375rem;
-                    //margin-bottom:1.5rem;    
-                }
-                @include g.pc{
-                    margin-left: 11.47%;
-                    // margin-top: 3.375rem;
-                    //margin-bottom: 1.5rem;
-                }
+            @include g.tab{
+                margin-left: 15%;    
+            }
+            @include g.pc{
+                margin-left: 11.47%;
+            }
             &>li ul{
                 list-style: auto;
             }
@@ -290,14 +299,14 @@
             padding-top: 1.0625rem;
             list-style: none;
             //margin-bottom: 1.625rem;
-                @include g.tab{
-                    margin-left:calc(15% - 1.25rem);
-                    //margin-bottom: 3.5rem;
-                }
-                @include g.pc{
-                    margin-left:calc(11.47% - 1.25rem);
-                    //margin-bottom: 3.5rem;
-                }
+            @include g.tab{
+                margin-left:calc(15% - 1.25rem);
+                //margin-bottom: 3.5rem;
+            }
+            @include g.pc{
+                margin-left:calc(11.47% - 1.25rem);
+                //margin-bottom: 3.5rem;
+            }
             &>li ul{
                 list-style: none;
             }
@@ -333,29 +342,29 @@
             --wp--style--unstable-gallery-gap:1.25rem !important;
             margin: 0 auto !important;
             width: 89.3%;
-                @include g.tab{
-                    display: grid; 
-                    width: 86.32%;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-                    row-gap: 1.25rem;
-                    column-gap: 1.25rem;
-                    }
-                @include g.pc{
-                    width: 88.16%;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    grid-template-rows: 1fr 1fr 1fr;
+            @include g.tab{
+                display: grid; 
+                width: 86.32%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                row-gap: 1.25rem;
+                column-gap: 1.25rem;
                 }
+            @include g.pc{
+                width: 88.16%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
         }
         &-link{
             margin: 1.94rem 0 4.31rem 5.3%;
-                @include g.tab{
-                    margin: 3.81rem 0 9.31rem 7.19%;
-                }
-                @include g.pc{
-                    margin-left: 6.44%;
-                    margin-bottom: 17.125rem;//274px
-                }
+            @include g.tab{
+                margin: 3.81rem 0 9.31rem 7.19%;
+            }
+            @include g.pc{
+                margin-left: 6.44%;
+                margin-bottom: 17.125rem;//274px
+            }
             >div a{
                 cursor: pointer;
                 &:link{

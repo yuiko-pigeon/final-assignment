@@ -10,16 +10,17 @@
         grid-template-rows:13.4375rem 1fr 9.375rem;
         @include g.tab{
             grid-template-rows:13.5625rem 1fr 9.375rem;
-            }
+        }
         @include g.pc{
             display: grid;
             grid-template-columns:80% 20%;
             min-height: 100dvh;
-            }
+        }
         &.fix{
             overflow: hidden;
-            }
         }
+    }
+
     .is-style-hero{
         display: flex;
         align-items:center;
@@ -46,22 +47,23 @@
             position: absolute;
             z-index:20
         }
-    .wp-block-cover__inner-container{
-        display: flex;
-        align-items: center;
-        padding-left: 6.7%;
-        font-size: 9.6vw;
-        color: g.$color-white;
-        @include g.tab{
-            font-size: 4.32vw;
-            padding-left: 10.3%;
-        }
-        @include g.pc{
-            font-size: 2.08vw;
-            padding-left: 5.5%;
+        .wp-block-cover__inner-container{
+            display: flex;
+            align-items: center;
+            padding-left: 6.7%;
+            font-size: 9.6vw;
+            color: g.$color-white;
+            @include g.tab{
+                font-size: 4.32vw;
+                padding-left: 10.3%;
+            }
+            @include g.pc{
+                font-size: 2.08vw;
+                padding-left: 5.5%;
+            }
         }
     }
-}
+
     .wp-block-columns{
         display: flex;
         flex-direction: column;
@@ -152,12 +154,12 @@
                         background-color: g.$color-white;
                         height: 0.25rem;
                         width: 9.05vw;
-                          @include g.tab{
-                              width:4.31vw;
-                          }
-                          @include g.pc{
-                              width: 3.29vw;
-                          } 
+                        @include g.tab{
+                            width:4.31vw;
+                        }
+                        @include g.pc{
+                            width: 3.29vw;
+                        } 
                     }
                     >a{
                         cursor: pointer;
@@ -187,6 +189,7 @@
                 }  
             }  
         }
+
         //右のカード
         .is-style-card-right{
             display: flex;
@@ -256,12 +259,12 @@
                         background-color: g.$color-white;
                         height: 0.25rem;
                         width: 9.05vw;
-                          @include g.tab{
-                              width:4.31vw;
-                          }
-                          @include g.pc{
-                              width: 3.29vw;
-                          } 
+                        @include g.tab{
+                            width:4.31vw;
+                        }
+                        @include g.pc{
+                            width: 3.29vw;
+                        } 
                     }
                     >a{
                         cursor: pointer;
@@ -291,9 +294,11 @@
                 }  
             }
         }
+
         img{
             object-fit: cover;
         }
+
         .wp-block-group{
             display: flex;
             flex-direction: column;
@@ -309,63 +314,62 @@
             @include g.pc{
                 width:95%;
             }
-            >div
-                >.wp-block-group
-                    {
+            >div >.wp-block-group{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+                height: auto;
+                padding: 2.7%;
+                position: relative;
+                margin-bottom: 4.2%;
+                width: 90.3%;
+                @include g.tab{
+                    width: 91%;
+                    margin-bottom: 4.5%;
+                }
+                @include g.pc{
+                    width:95%;
+                    margin-bottom: 2.6%;
+                }
+                h3{
                     display: flex;
-                    flex-direction: column;
+                    font-size:1.375rem;//22px
+                    color:g.$color-brown;
+                    margin-bottom: 0.25rem;
+                }
+                p{
+                    line-height: 1.485rem;//23.76px
+                    display: flex;
                     justify-content: center;
-                    background-color: rgba($color: #FFFFFF, $alpha: 0.8);
-                    height: auto;
-                    padding: 2.7%;
-                    position: relative;
-                    margin-bottom: 4.2%;
-                    width: 90.3%;
-                    @include g.tab{
-                        width: 91%;
-                        margin-bottom: 4.5%;
-                    }
-                    @include g.pc{
-                        width:95%;
-                        margin-bottom: 2.6%;
-                    }
-                    h3{
-                        display: flex;
-                        font-size:1.375rem;//22px
-                        color:g.$color-brown;
-                        margin-bottom: 0.25rem;
-                    }
-                    p{
-                        line-height: 1.485rem;//23.76px
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: g.$color-brown;
-                        font-weight: g.$Mbold;//400
-                        font-size: 1rem; //16px
-                        height: auto;//% とりあえず
-                        width: 100%;
-                        margin-top: 0.25rem;
-                        padding: 0;
-                    }
+                    align-items: center;
+                    color: g.$color-brown;
+                    font-weight: g.$Mbold;//400
+                    font-size: 1rem; //16px
+                    height: auto;//% とりあえず
+                    width: 100%;
+                    margin-top: 0.25rem;
+                    padding: 0;
+                }
             }
         }
     }//wp-block-columns閉じ
+
     .is-style{
         &-map{
             padding: 0;
             display: block;
             width: 100vw;
-                    @include g.tab{
-                        height: auto;
-                    }  
-                    @include g.pc{
-                        width: 100%;
-                    }
+            @include g.tab{
+                height: auto;
+            }  
+            @include g.pc{
+                width: 100%;
+            }
             >span{//.p-map-color
-                    opacity: .2855 !important;
-                    height: 100%;
-                }
+                opacity: .2855 !important;
+                height: 100%;
+            }
             >img{//.p-map-image
                 object-fit: cover;
                 height: 100%;
@@ -441,19 +445,4 @@
             }
         }
     }//.is-style閉じ
-
  }
-    
-    /*.p-map{
-        p{
-            display: block;
-            color: g.$color-white;
-            font-size: 0.875rem;    //14px
-            line-height: 2.0625rem; //33px
-            margin-top: 0.9375rem;
-                @include g.pc{
-                    font-size: 1rem;    //16px
-                    line-height: 2.0625rem; //33px
-                }
-        }
-    }*/
