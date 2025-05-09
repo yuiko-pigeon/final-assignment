@@ -104,19 +104,20 @@
         }
     }
 
-    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+    .wp-block-gallery.has-nested-images 
+    figure.wp-block-image:not(#individual-image) {
         width: auto;
     }
 
     .wp-block-table{
         margin: 3.75rem auto;
         width: 89.3%;
-            @include g.tab{
-                width:85.49%;//713px
-            }
-            @include g.pc{
-                width: 87.12%;//1353px
-            }
+        @include g.tab{
+            width:85.49%;//713px
+        }
+        @include g.pc{
+            width: 87.12%;//1353px
+        }
         tr td{
             border: 0.0625rem solid g.$color-gray;
             padding-top: 0;

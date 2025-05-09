@@ -51,14 +51,14 @@
             display: flex;
             align-items: center;
             padding-left: 6.7%;
-            font-size: 9.6vw;
+            font-size: clamp(2.06rem,9.6vw,4.5rem);
             color: g.$color-white;
             @include g.tab{
-                font-size: 4.32vw;
+                font-size: clamp(2.18rem,4.32vw,3rem);
                 padding-left: 10.3%;
             }
             @include g.pc{
-                font-size: 2.08vw;
+                font-size: clamp(1.62rem,2.08vw,3.12rem);
                 padding-left: 5.5%;
             }
         }
@@ -106,14 +106,18 @@
                 justify-content: flex-end;
                 width:89.3%;
                 padding: 0;
-                aspect-ratio: 335/642;
-                min-height: auto;
+                //aspect-ratio: 335/642;
+                min-height: calc(89.3dvw*1.92);
                 @include g.tab{  
-                    aspect-ratio: 616 / 1197; 
+                    //aspect-ratio: 616 / 1197; →縦は横の1.94倍
                     margin-top: 15.5%;
                     margin-bottom: 16.7%;
                     margin-left: 15.5%;
                     width: 79.8%;
+                    min-height: calc(39.9dvw*1.94);//39.9→width50%のカードのさらに79.8%
+                }
+                @include g.pc{
+                    min-height: calc(31.92dvw*1.94);
                 }
                 >.wp-block-cover__inner-container{
                     padding-left: 0;
@@ -123,23 +127,25 @@
             }
             h2{
                 display:inline-block;
-                font: g.$bold 10.9vw g.$fontR;//41px
+                font-weight: g.$bold;
+                font-size: clamp(2.31rem,10.9vw,5.25rem);
+                font-family: g.$fontR;
                 color: g.$color-lightGray;
                 position: absolute;
                 top: 0.8125rem;//13px
                 left: 4.48%;
-                line-height: 12.8vw;
+                line-height: clamp(2.72rem,12.8vw,6.18rem);
                 @include g.tab{
                     top: 0.8750rem;//14px
                     left: 3.09%;
-                    font-size: 5.28vw;
-                    line-height: 6.18vw;
+                    font-size: clamp(2.56rem,5.28vw,3.88rem);
+                    line-height: clamp(3rem,6.18vw,4.63rem);
                 }
                 @include g.pc{
                     top: 1.5rem;//24px
                     left: 1.63%;
-                    font-size: 4.2vw;
-                    line-height: 4.9vw;
+                    font-size: clamp(3.18rem,4.2vw,6.18rem);
+                    line-height: clamp(3.68rem,4.9vw,7.18rem);
                 }
                 >span{
                     display: inline-block;
@@ -210,8 +216,8 @@
                 position: relative;
                 align-items:end;
                 justify-content: flex-end;
-                aspect-ratio: 336 / 642;
-                min-height: auto;
+                //aspect-ratio: 336 / 642;→縦は横の1.92倍
+                min-height: calc(100dvw*1.92);
                 width:89.6%;
                 padding: 0;
                 @include g.tab{
@@ -219,7 +225,11 @@
                     margin-bottom: 16.7%;
                     margin-right: 15.5%;
                     width: 79.8%;
-                    aspect-ratio: 616 / 1197;
+                    //aspect-ratio: 616 / 1197;
+                    min-height: calc(39.9dvw*1.94);
+                }
+                @include g.pc{
+                    min-height: calc(31.92dvw*1.94);
                 }
                 >.wp-block-cover__inner-container{
                     padding-left: 0;
@@ -230,21 +240,21 @@
             h2{
                 color: g.$color-white;
                 display: flex;
-                font-size: 10.9vw;
+                font-size: clamp(2.31rem,10.9vw,5.25rem);
                 position: absolute;
                 top: 0.8125rem;//13px
                 left: 3.87%;
-                line-height: 12.8vw;
+                line-height: clamp(2.72rem,12.8vw,6.18rem);
                 @include g.tab{
                     top:1rem;
-                    font-size: 5.28vw;
-                    line-height: 6.18vw;
+                    font-size: clamp(2.56rem,5.28vw,3.88rem);
+                    line-height: clamp(3rem,6.18vw,4.63rem);
                 }
                 @include g.pc{
                     top: 1.75rem;//28px
                     left: 3.41%;
-                    font-size: 4.2vw;
-                    line-height: 4.9vw;
+                    font-size: clamp(3.18rem,4.2vw,6.18rem);
+                    line-height: clamp(3.68rem,4.9vw,7.18rem);
                 }
                 >span{
                     display: inline-block;
@@ -308,6 +318,7 @@
             justify-self: center;
             width: 100%;
             padding-top: 10rem;
+            margin:0 auto;
             @include g.tab{
                 padding-top: 12.5rem;
             }
@@ -322,15 +333,15 @@
                 height: auto;
                 padding: 2.7%;
                 position: relative;
-                margin-bottom: 4.2%;
+                margin:0 auto 4.2% auto;
                 width: 90.3%;
                 @include g.tab{
                     width: 91%;
-                    margin-bottom: 4.5%;
+                    margin:0 auto 4.5% auto;
                 }
                 @include g.pc{
                     width:95%;
-                    margin-bottom: 2.6%;
+                    margin: 0 auto 2.6% auto;
                 }
                 h3{
                     display: flex;

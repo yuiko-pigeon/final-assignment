@@ -32,15 +32,15 @@
         color: g.$color-white;
         font-size: 9.6vw;//36px;
         position: absolute;
-        padding-left: 6.7%;
+        margin-left: 6.95%;
         line-height: 3.34rem;//53.46px
             @include g.tab{
-                padding-left: 10.3%;
+                margin-left: 5.375rem;
                 line-height: 5.57rem;//89.1px
                 font-size: 3.75rem;//60px
             }
             @include g.pc{
-                padding-left: 5.5%;
+                margin-left: 5.375rem;
             }
     }
 }

@@ -26,36 +26,17 @@
         display: block;
         background-color: g.$color-footerBrown;
         background-size: cover;
-        height: 150px;//%に?
+        height: 100%;//%に?
     }
     &__image{
         display: block;
         background-image: url(../../picture/texture-layer.png);
         background-repeat: repeat-x;
         background-size: cover;
-        height: 150px;//%に?
+        height: 100%;//%に?
         
     }
 }
-//WordPress CSS
-.menu-footer-container{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    ul{
-        display: flex;
-        >li{
-            list-style: none;
-            &:not(:last-child) .p-link__footer::after{
-                    content:'|';
-                    padding: 0 0.41rem;
-                    display: inline-block; 
-                }
-        }
-    }
-}
-
-
 
 
 /*

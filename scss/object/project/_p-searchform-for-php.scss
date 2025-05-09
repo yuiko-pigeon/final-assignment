@@ -68,6 +68,8 @@
         width: 28.3%;
         border: solid 0.0625rem g.$color-gray;
         cursor:pointer;
+        color: g.$color-gray;
+        background:linear-gradient(g.$color-lightBeige,g.$color-darkBeige);
         @include g.tab{
             width:24.90%;   
         }

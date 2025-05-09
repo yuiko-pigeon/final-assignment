@@ -14,17 +14,18 @@
         grid-template-rows:13.4375rem 1fr 9.375rem;
         @include g.tab{
             grid-template-rows:13.5625rem 1fr 9.375rem;
-            }
+        }
         @include g.pc{
             display: grid;
             grid-template-columns:80% 20%;
             min-height: 100vh;
-            }
+        }
         &.fix{
             overflow: hidden;
             //max-height: 100vh;
-            }
         }
+    }
+
     .p-article{
         display: flex;
         flex-direction: column;
@@ -44,6 +45,7 @@
             gap:3rem;
         }
     }
+
     .title{
         display: flex;
         background-color: g.$color-brown;
@@ -61,45 +63,45 @@
         @include g.pc{
             padding-left: 9.31%;
             padding-bottom: 8.86%;
-    }
-    .p-card__textarea{
-        background-color: g.$color-middleGray;
-        color: g.$color-brown;
-        display: flex;
-        flex-direction: column;
-        min-height: auto;
-        height: 10rem;
-        @include g.tab{
-            flex-direction: row;
-            justify-content: center;
         }
-        >a{
+        .p-card__textarea{
+            background-color: g.$color-middleGray;
+            color: g.$color-brown;
             display: flex;
-            justify-content: center;
-            padding-top: 2rem;
-            cursor: pointer;
-            &:link{
-                color: g.$color-brown;
-                text-decoration: none;
+            flex-direction: column;
+            min-height: auto;
+            height: 10rem;
+            @include g.tab{
+                flex-direction: row;
+                justify-content: center;
             }
-            &:visited{
-                color: g.$color-brown;
-                text-decoration: none;
+            >a{
+                display: flex;
+                justify-content: center;
+                padding-top: 2rem;
+                cursor: pointer;
+                &:link{
+                    color: g.$color-brown;
+                    text-decoration: none;
+                }
+                &:visited{
+                    color: g.$color-brown;
+                    text-decoration: none;
+                }
+                &:hover{
+                    color: g.$color-brown;
+                    text-decoration: underline;
+                    text-decoration-color: g.$color-brown;
+                }
+                &:focus{
+                    color: g.$color-brown;
+                    text-decoration: none;
+                }
+                &:active{
+                    color: g.$color-brown;
+                    text-decoration: none;
+                } 
             }
-            &:hover{
-                color: g.$color-brown;
-                text-decoration: underline;
-                text-decoration-color: g.$color-brown;
-            }
-            &:focus{
-                color: g.$color-brown;
-                text-decoration: none;
-            }
-            &:active{
-                color: g.$color-brown;
-                text-decoration: none;
-            } 
         }
     }
-}
 }

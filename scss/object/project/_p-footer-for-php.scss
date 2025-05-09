@@ -26,14 +26,14 @@
         display: block;
         background-color: g.$color-footerBrown;
         background-size: cover;
-        height: 150px;//%に?
+        height: 100%;
     }
     &__image{
         display: block;
         background-image: url(./image/texture-layer.png);
         background-repeat: repeat-x;
         background-size: cover;
-        height: 150px;//%に?
+        height: 100%;
         
     }
 }
@@ -57,17 +57,3 @@
         }
     }
 }
-
-/*
-.p-footer{
-    &__text--large{
-        display: none;
-        @include g.tab{
-        display: block;
-        font-family: g.$fontMp;
-        font-weight: g.$Mbold;
-        justify-content: center;
-        color: g.$color-white;
-        font-size: 1.25rem;    //20px
-        }
-        }       */

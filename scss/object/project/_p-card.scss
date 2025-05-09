@@ -9,39 +9,39 @@
     justify-self: center;
     width: 90.4%;
     padding-top: 10rem;
-        @include g.tab{
-            padding-top: 12.5rem;
-       }
-        @include g.pc{
-            width:95%;
+    @include g.tab{
+        padding-top: 12.5rem;
+    }
+    @include g.pc{
+        width:95%;
     }
     &__section{
         display: flex;
         width: 100%;
         justify-content: center;
         margin-top: 5.3%;
-            @include g.tab{
-                display: flex;
-                width: 50%;
-                /* align-items: center; */
-                flex-direction: row;
-                justify-content: flex-start;
-                margin-top: 0%;
-            }
+        @include g.tab{
+            display: flex;
+            width: 50%;
+            /* align-items: center; */
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 0%;
+        }
     }
     &__section--right{
         display: flex;
         width: 100%;
         justify-content: center;
         margin-bottom: 13.07%;
-            @include g.tab{
-                display: flex;
-                width: 50%;
-                /* align-items: center; */
-                flex-direction: row;
-                justify-content: flex-end;
-                margin-bottom: 0%;
-            }
+        @include g.tab{
+            display: flex;
+            width: 50%;
+            /* align-items: center; */
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-bottom: 0%;
+        }
     }
     &__background--threeBurgers{
         display: grid;
@@ -56,13 +56,13 @@
         width:89.3%;
         aspect-ratio: 335/642;
         min-height: auto;
-            @include g.tab{  
-                aspect-ratio: 616 / 1197; 
-                margin-top: 15.5%;
-                margin-bottom: 16.7%;
-                margin-left: 15.5%;
-                width: 79.8%;
-            }
+        @include g.tab{  
+            aspect-ratio: 616 / 1197; 
+            margin-top: 15.5%;
+            margin-bottom: 16.7%;
+            margin-left: 15.5%;
+            width: 79.8%;
+        }
     }
     &__background--bigPotato{
         display: grid;
@@ -77,13 +77,13 @@
         aspect-ratio: 336 / 642;
         min-height: auto;
         width:89.6%;
-            @include g.tab{
-                margin-top: 15.5%;
-                margin-bottom: 16.7%;
-                margin-right: 15.5%;
-                width: 79.8%;
-                aspect-ratio: 616 / 1197;
-            }
+        @include g.tab{
+            margin-top: 15.5%;
+            margin-bottom: 16.7%;
+            margin-right: 15.5%;
+            width: 79.8%;
+            aspect-ratio: 616 / 1197;
+        }
     }
     &__title{
         display:inline-block;
@@ -93,18 +93,18 @@
         top: 0.8125rem;//13px
         left: 4.48%;
         line-height: 12.8vw;
-            @include g.tab{
-                top: 0.8750rem;//14px
-                left: 3.09%;
-                font-size: 5.28vw;
-                line-height: 6.18vw;
-            }
-            @include g.pc{
-                top: 1.5rem;//24px
-                left: 1.63%;
-                font-size: 4.2vw;
-                line-height: 4.9vw;
-            }
+        @include g.tab{
+            top: 0.8750rem;//14px
+            left: 3.09%;
+            font-size: 5.28vw;
+            line-height: 6.18vw;
+        }
+        @include g.pc{
+            top: 1.5rem;//24px
+            left: 1.63%;
+            font-size: 4.2vw;
+            line-height: 4.9vw;
+        }
     }
     &__title--white{
         color: g.$color-white;
@@ -114,17 +114,17 @@
         top: 0.8125rem;//13px
         left: 3.87%;
         line-height: 12.8vw;
-            @include g.tab{
-                top:1rem;
-                font-size: 5.28vw;
-                line-height: 6.18vw;
-            }
-            @include g.pc{
-                top: 1.75rem;//28px
-                left: 3.41%;
-                font-size: 4.2vw;
-                line-height: 4.9vw;
-            }
+        @include g.tab{
+            top:1rem;
+            font-size: 5.28vw;
+            line-height: 6.18vw;
+        }
+        @include g.pc{
+            top: 1.75rem;//28px
+            left: 3.41%;
+            font-size: 4.2vw;
+            line-height: 4.9vw;
+        }
     }
     &__subcard{
         display: flex;
@@ -135,14 +135,14 @@
         padding: 2.7%;
         position: relative;
         margin-bottom: 4.2%;
-            @include g.tab{
-                width: 91%;
-                margin-bottom: 4.5%;
-            }
-            @include g.pc{
-                width:95%;
-                margin-bottom: 2.6%;
-            }
+        @include g.tab{
+            width: 91%;
+            margin-bottom: 4.5%;
+        }
+        @include g.pc{
+            width:95%;
+            margin-bottom: 2.6%;
+        }
     }
     &__subtitle{
         display: flex;
@@ -163,7 +163,6 @@
         margin-top: 0.25rem;
         padding: 0;
         }
-    
     /*arcive*/
     &__figure--arcive{
         display: flex;
@@ -174,13 +173,13 @@
         justify-self: center;
         width: 90.4%;
         margin:auto;
-            @include g.tab{
-                flex-direction: column;
-                width:90.4%;
-                display: block;
-            }      
-            @include g.pc{
-                width:87.12%;
+        @include g.tab{
+            flex-direction: column;
+            width:90.4%;
+            display: block;
+        }      
+        @include g.pc{
+            width:87.12%;
         } 
     }
     &__arcive{
@@ -189,12 +188,12 @@
         flex-direction: column;
         position: relative;
         min-height: auto;
-            @include g.tab{  
-                grid-template-rows: none;
-                grid-template-columns: 50% 50%;
-                align-items: stretch;
-            }
+        @include g.tab{  
+            grid-template-rows: none;
+            grid-template-columns: 50% 50%;
+            align-items: stretch;
         }
+    }
     &__textarea{
         background-color: g.$color-brown;
         color: g.$color-white;
@@ -248,14 +247,13 @@
         font-size: 1rem;
         line-height: 23.76px;
         width: 90.48%;
-        height: -webkit-fill-available;
+        height: 100%;
         margin: 0 auto 2.5rem auto;
         @include g.tab{
             font-weight: 400;
             font-size: 1rem;
             line-height: 23.76px;
             width: 75.08%;
-            height: 100%;
             margin:0 ;
             padding-bottom:11.9%;
             padding-left:  8.99%;

@@ -23,7 +23,7 @@
 
     .attachment-post-thumbnail{
         object-fit: cover;
-        height: -webkit-fill-available;
+        height: 100%;
         aspect-ratio: 336.11/230.53;
         width: 100%;
         @include g.tab{
@@ -37,7 +37,6 @@
             object-fit: cover;
             aspect-ratio: 677/471;
             width: 100%;
-            height:auto
         }
     }
 
@@ -167,7 +166,8 @@
                 text-decoration: none;
             } 
         }
-        }
+    }
+    
         .current{
             border: 0.0625rem solid; //1px
             width: 2.1875rem;//35px
@@ -243,7 +243,7 @@
         .p-pagenation{
             display: none;
         }
-        
+
         .p-pagenationTBPC{
             display: none;
         }

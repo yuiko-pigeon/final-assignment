@@ -13,7 +13,7 @@
     }
     &__inner{
         display: block;
-        height: 9.375rem;;
+        height: 100%;
     }
     &__textarea{
         display: flex;
@@ -26,26 +26,26 @@
     }
     &__text{
         position: absolute;
-        top: 1rem;
-            @include g.tab{
-                position: absolute;
-                top: 1.875rem;//30px
-            }
-            @include g.pc{
-                position: absolute;
-                top: 2.5625rem;//41px
-            }   
+        top: 10.67%;
+        @include g.tab{
+            position: absolute;
+            top: 20%;//30px
+        }
+        @include g.pc{
+            position: absolute;
+            top: 27.33%;//41px
+        }   
     }
     &__text--small{
         position: absolute;
-        bottom: 1rem;
-            @include g.tab{
-                position:absolute;
-                bottom: 1.5625rem;
-            }
-            @include g.pc{
-                position: absolute;
-                bottom: 1.6875rem;//27px
-            }
+        bottom: 10.67%;
+        @include g.tab{
+            position:absolute;
+            bottom: 16.67%;
+        }
+        @include g.pc{
+            position: absolute;
+            bottom: 18%;//27px
+        }
     }
 }

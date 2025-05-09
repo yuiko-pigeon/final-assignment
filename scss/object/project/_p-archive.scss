@@ -23,7 +23,7 @@
 
     .attachment-post-thumbnail{
         object-fit: cover;
-        height: -webkit-fill-available;
+        height: 100%;
         aspect-ratio: 336.11/230.53;
         width: 100%;
         @include g.tab{
@@ -37,7 +37,6 @@
             object-fit: cover;
             aspect-ratio: 677/471;
             width: 100%;
-            height:auto
         }
     }
 
